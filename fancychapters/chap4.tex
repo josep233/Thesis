@@ -1,0 +1,373 @@
+\chapter{Sensitivity Analysis of 3D Parameterized Models}
+\label{ch:ch4}
+
+\section{Background}
+\label{sec:ch4_background}
+Research has suggested that the shape of maize stalks can greatly influence their ability to withstand stalk lodging~\scite{von_forell_preventing_2015,stubbs_maize_2022,robertson_maize_2017}. However, these studies relied primarily upon an observational approach. This approach was used in prior studies to identify correlational patterns between gross morphological features and stalk strength. To gain a more nuanced understanding and establish causation, direct modification of the stalk geometry is required. In actual practice, direct modification of the structural attributes of the maize stalk is extremely difficult. A promising alternative is to use sophisticated computational models which allow precise control over each aspect of the maize stalk. The 3D parameterized maize stalk model developed previously provides direct control over individual geometric and material features of the maize stalk~\scite{ottesen_development_2023-1}. This type of model enables studies such as sensitivity analyses and optimization studies to shed more light on the mechanics of stalk strength and failure.
+
+A sensitivity analysis is a powerful tool that can be used to characterize the manner in which features of a system influence its behavior~\scite{saltelli_sensitivity_2009}. This is done by changing each aspect of the model on a one-at-a-time basis to determine what impact this change has on the model output~\scite{hamby_comparison_1995}. Sensitivity analysis has been used to study growth and development in the field of agronomy, including wheat~\scite{richter_sensitivity_2010}, potatoes~\scite{gao_image_2018}, and rice~\scite{confalonieri_comparison_2010}. 
+
+The purpose of this chapter is to understand how geometric and material properties of maize stalk models influence maize stalk flexural stiffness, failure strength, and biomass. This will be done using a sensitivity analysis combined with statistical data from actual experiments. These results will enable researchers to better understand how geometric and tissue parameters of the maize stalk contribute to the behaviors listed above. This understanding can help guide future efforts to mitigate stalk lodging via selective breeding or genetic manipulation.
+
+\section{Methods}
+\label{sec:ch4_methods}
+
+\subsection{Overview}
+\label{ssec:ch4_overview}
+Sensitivities in this paper were computed using the 3D parameterized maize stalk model that was described in previous chapters. Rather than modeling the entire stalk, this model captures the failure region: the region immediately apical of the node~\scite{robertson_corn_2015}. The model approximates each cross-section of an individual maize stalk using two ellipses, one for the outer boundary and one for the rind/pith boundary. Axial variation is captured by allowing the elliptical cross-section to vary along the length of the stalk. One advantage of this model is that it can be used to efficiently create specimen-specific models from experimental data. An original specimen-specific model and a corresponding parameterized model are shown in~\cref{fig:CTvModelLessLines}. The colored paths on the parameterized model illustrate the major diameter, minor diameter, and rind thickness paths that define the elliptical cross-sections of the model at each axial location.
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[scale=1.05]{figures/CTvModelLessLines}
+	\caption[The parameterized maize stalk model.]{The parameterized maize stalk model. The highlighted lines are the inner and outer exterior edges of the rind geometry. The outer edges are simply the major and minor diameter landmark paths, and the inner edges are the major and minor diameter landmark paths with the rind thickness feature path subtracted. }
+	\label{fig:CTvModelLessLines}
+\end{figure}
+
+The 3D parameterized maize stalk model is defined by a number of geometric parameters as well as a set of material tissue parameters. This model was used to perform a comprehensive sensitivity analysis to determine how the parameters that define the model influence the flexibility, strength, and total biomass.
+
+\subsection{Sensitivity Analysis}
+\label{ssec:sensitivity_analysis}
+Sensitivity ${S}$ is essentially a partial derivative that quantifies the influence of factor ${X_{i}}$ on response ${Y_{j}}$:
+
+\begin{equation}
+	\label{eq:bare_sensitivity}
+	S_{ij} = \frac{\partial Y_{j}}{\partial X_{i}}
+\end{equation}
+
+Sensitivities are frequently normalized by reference values to obtain a non-dimensionalized form of sensitivity, ${S_{ij}^{*}}$:
+
+\begin{equation}
+	\label{eq:normalized_sensitivity}
+	S_{ij}^{*} = \frac{\partial Y_{j}}{\partial X_{i}} \frac{X_{i, ref}}{Y_{j, ref}}
+\end{equation}
+
+Here ${X_{i, ref}}$ is the reference value of factor ${X_{i}}$, which is a material or geometric input parameter, and ${Y_{j, ref}}$ is the corresponding response when all ${X_{i}}$ factors are at their reference values. The structural characteristics of interest were flexural stiffness, failure strength and biomass. The non-dimensional form allows comparison across inputs that may have different units. We can discretize either of these equations using a finite difference approach:
+
+\begin{equation}
+	\label{eq:normalized_sensitivity2}
+	S_{ij}^{*} = \frac{Y_{j, new} - Y_{j, ref}}{X_{i, new} - X_{i, ref}} \frac{X_{i, ref}}{Y_{j, ref}}
+\end{equation}
+
+Where the subscript “new” refers to a quantity calculated with a modified input factor.
+
+\subsection{Refined Parameterization}
+\label{ssec:refined_parameterization}
+The original parameterization approach~\scite{ottesen_development_2023-1} utilized 51 geometric parameters. Of these 51 parameters, 36 were used to define geometric landmarks (12 parameters per path) and 15 were used to define the transition patterns between landmarks (5 per path). While this parameterization adequately captured the overall shape of the maize stalk and provided good predictive accuracy, we found that this parameterization approach did not offer the level of control required for a sensitivity study. This is because changes to a single landmark tended to influence the shape of the model on both sides of the modified landmark. To provide more localized control over the stalk geometry, we introduced additional control points between landmarks.~\cref{fig:NewParameterization_V2} illustrates both the original and updated parameterization schemes.
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[scale=1.05]{figures/NewParameterization_V2}
+	\caption[The parameterized path for major/minor stalk diameter as a function of axial position.]{The parameterized path for major/minor stalk diameter as a function of axial position. Top  Panel: Photograph showing the major diameter path traced in red. Middle Panel: The original parameterization of the major diameter. Bottom Panel: The updated parameterization with additional control points (open circles) located at the point of maximum discursion of the transition pattern between landmark points (closed circles). As seen by comparison between the two panels, changes to a landmark in the updated parameterization scheme have a more limited influence than in the original scheme. Note: The changes shown here have been exaggerated for illustrative purposes. }
+	\label{fig:NewParameterization_V2}
+\end{figure}
+
+These new parameter points provided a much greater level of control over geometric features while still preserving the characteristics of the original parameterization technique. A validation study confirmed that models with 96 parameters provided identical results to corresponding models with 51 parameters.
+
+\subsubsection{Parameterization Challenges}
+\label{sssec:parameterization_challenges}
+The new parameterization allowed for very fine control of geometric parameters to influence stalk shape. However, it presented some new challenges to the sensitivity analysis. 
+
+First, although the parameterization provided fine control over geometry, changing just one geometric parameter by a small amount resulted in an extremely small change in overall model shape. The model’s finite element mesh has been optimized to accurately capture overall model response, but does not accurately capture these small changes. A mesh convergence could have been performed for each parameter modified in this chapter. This would have required 96 mesh convergence studies. Another alternative would have been to create a single mesh that was sufficiently detailed that it could capture any minor change in the stalk geometry. Either of these approaches would have required thousands of hours of manual modeling and computational effort. In addition, the resulting mesh(es) would have required many hundreds or thousands of additional computing time to perform the sensitivity analysis. The resulting change in stiffness or strength was therefore sometimes difficult to detect in the presence of some degree of “noise” which is due to the computational mesh. Levels of modification that were large enough to detect clearly often resulted in model geometries that were highly distorted.
+
+Secondly, after fitting the parameterized model to 900 individual maize stalks, we discovered that most model parameters are not truly independent, but instead are highly correlated with neighboring parameters. Traditional one-at-a-time sensitivity analysis entirely neglects correlations between model parameters, resulting in sensitivities that could be misleading~\scite{groen_ignoring_2017}.
+
+These challenges were addressed using a statistical technique called principal component analysis (also known as empirical eigenfunction analysis). Principal component analysis captures and describes natural patterns of variation observed in a data set. In our case, these patterns involved coordinated variation patterns involving the 96 model parameters. 
+
+\subsubsection{Principal Component Analysis}
+\label{sssec:principal_component_analysis}
+Principal component analysis transforms a dataset into a new coordinate system defined by empirical basis “functions” that capture the largest variation in the data~\scite{jackson_users_1991}. These functions, known as principal components, serve as the foundation of the data. The first principal component captures the most variation, while subsequent components capture progressively less.
+
+Principal component analysis can be used to reduce the dimensionality of a system because the ranking of the principal components can be used to ‘cut off’ information which can be neglected or omitted with a minimal loss of fidelity. For example, in a model with 100 parameters (or dimensions), if the first three principal components account for 95\% of the variation, we could use only these three principal components and achieve a very similar set of behaviors using just 3 dimensions instead of the original 100 dimensions. This machine learning technique has been used in many fields, often dealing with morphology, including complex drawing assemblies~\scite{schwarz_principal_2018}, and structural components~\scite{xiao_--fly_2020}.
+
+Because principal component analysis is a statistical technique that uses variations in model parameters, it also preserves any existing relationships between model parameters~\scite{ramsey_statistical_2013}. This means that we can use principal component analysis on our 96 geometric parameters and still preserve how model parameters move according to nature. In the sections below, we outline how principal components were calculated for our 96 geometric parameters.
+
+\subsubsection{Parameter Grouping Approach}
+\label{sssec:parameter_grouping_approach}
+A data set of 900 maize stalk geometries were fitted to the 3D parameterized model which has been used and described in previous studies~\scite{ottesen_parameterised_2022,ottesen_development_2023-1,stubbs_maize_2022}. The fitting approach produced a matrix of model parameters having 900 rows (one for each stalk) and 96 columns (the geometric parameters). Principal component analysis was performed on this data set. Prior to performing principal component analysis, each parameter was standardized according to~\cref{eq:x_standard}:
+
+\begin{equation}
+	\label{eq:x_standard}
+	X_{i, standardized} = \frac{X_{i} - \bar{X_{i}}}{s_{X_{i}}}
+\end{equation}
+
+Where ${X_{i}}$ are the original parameters, ${\bar{X_{i}}}$ is the mean parameter value and ${s_{X_{i}}}$ is the standard deviation of the ${X_{i}}$ values. Standardization was applied to remove scaling effects between parameters of different units. In addition, standardization ensured that each parameter exerted an equal influence on the total variance of the data set. Principal component analysis was performed using a pre-built function in Matlab 2022. The output of principal component analysis was a 96 by 96 matrix of principal components (called ${P}$), a 900 by 96 matrix of principal component coefficients (called ${C}$), and a vector of 96 eigenvalues that described the total variance explained by each principal component. The original fitted parameter matrix (${X_{orig}}$) could be reconstructed with~\cref{eq:reconstruction}.
+
+\begin{equation}
+	\label{eq:reconstruction}
+	X_{orig} = CP^{T}s_{X} + \bar{X}
+\end{equation}
+
+Where ${C}$ is the coefficients matrix and ${P}$ is the principal component matrix. In order to convert to the space of the original parameters, de-standardization was applied (multiplying by standard deviation and adding the mean in~\cref{eq:reconstruction}). 
+
+The principal component approach essentially re-parameterized the maize stalk model. Instead of controlling the geometry through one-at-a-time variation of individual geometric parameters, the principal component approach allowed us to control the geometry by adjusting the amount of each principal component present in each model.~\cref{fig:vizPC1_closeup_V2} provides an example of what a +100\% standard deviation change to the first principal component looks like for a representative stalk model. More information on the mechanics of this process is provided in further sections.
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[scale=1.05]{figures/vizPC1_closeup_V2}
+	\caption[Visualizing the first principal component.]{Visualizing the first principal component. The left side (in black) is the stalk at its ‘reference’ state (no changes to the principal component). The right side (in red) is the same stalk with a +100\% standard deviation increase applied to the model’s first principal component. Each stalk is mirrored across from each other in order to show the differences between the two (the only part of each stalk shown is the region above the node–regions below the node are not shown).}
+	\label{fig:vizPC1_closeup_V2}
+\end{figure}
+
+For sensitivity analysis, we treated the first twenty columns of principal component coefficients (from the matrix ${C}$) as the new control ‘parameters’ of the 3D parameterized model. Each entry in the matrix ${C}$ represents the amount of a given principal component present in the model. By increasing a given column in the principal component coefficient matrix, we could ‘twist a knob’ that increased the amount of a given principal component. 
+
+\subsection{Finite element models and analyses}
+\label{ssec:finite_element_models_and_analyses}
+The parameterization techniques outlined in~\cref{ssec:refined_parameterization} were used to generate 3D parameterized stalk models using SolidWorks. These 3D CAD models were then imported into the commercial finite element software Abaqus for structural analysis. The results of finite element analysis were used to calculate sensitivities.
+
+\subsubsection{Analyses Performed}
+\label{sssec:analyses_performed}
+Two mechanical responses of the 3D parameterized maize stalk model were investigated: flexural stiffness and failure strength. Flexural stiffness was calculated using a linear static analysis. Failure strength was calculated using linear buckling analysis. Details on the loading conditions for both cases are provided in~\cref{sssec:ch4_boundary_conditions}. 
+
+\subsubsection{Material Properties}
+\label{sssec:ch4_material_properties}
+As in previous studies~\scite{ottesen_parameterised_2022,stubbs_maize_2022}, we modeled the maize stalk rind and pith tissues using a transversely isotropic elastic material model. A transversely isotropic material consists of six material constants, five of which are independent~\scite{milton_theory_2002}.~\cref{fig:TransverseIsotropy_Angled_ch4} provides a diagram depicting these six material properties.
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[scale=0.85]{figures/TransverseIsotropy_Angled}
+	\caption[Interpretation of transverse isotropy material constants.]{Interpretation of transverse isotropy material constants. The || symbol indicates a property in the fiber direction, while the ${\perp}$ symbol indicates a property perpendicular to the fibers. Material direction is highlighted for the rind tissue, but this orientation is also present in pith tissue.}
+	\label{fig:TransverseIsotropy_Angled_ch4}
+\end{figure}
+
+There were twelve different material constants required to define the material response of maize stalks, ten of which were independent. The ranges that were used in this chapter for each of these material constants are shown in~\cref{tab:material_ranges_ch4} along with the sources for each range.
+
+\begin{table}[htbp]
+	\centering
+	\caption[Material constant ranges for maize stalk pith and rind tissue.]{Material constant ranges for maize stalk pith and rind tissue, from Ottesen~\protect\cite{ottesen_development_2023-1}. Units in GPa.}
+	\label{tab:material_ranges_ch4}	
+    \renewcommand{\arraystretch}{1.75} % General row spacing
+
+    \begin{tabular}{|>{\centering\arraybackslash}m{1.35cm}|>{\centering\arraybackslash}m{1.65cm}|>{\centering\arraybackslash}m{1.9cm}|>{\centering\arraybackslash}m{2cm}|>{\centering\arraybackslash}m{2cm}|>{\centering\arraybackslash}m{2.35cm}|}
+		\hline
+		\textbf{property} & \textbf{method} & \textbf{distribution} & \textbf{pith} & \textbf{rind} & \textbf{source} \\
+		\hline
+		${E_{\perp}}$ & random sampling & normal & (0.026, 0.01) & (0.85, 0.39) & Stubbs~\protect\cite{stubbs_maize_2022} \\
+        \hline
+		rind ${E_{||}}$ & specimen specific & empirical & n/a & specimen specific & Al-Zube~\protect\cite{al-zube_elastic_2018} \\
+        \hline
+		pith ${E_{||}}$ & random sampling & normal & (0.45, 0.05) & n/a & Sutherland~\protect\cite{sutherland_influence_2022} \\
+        \hline
+		${G_{\perp}}$ & calculated & n/a & \multicolumn{2}{c|}{\text{\Large ${\frac{E_{\perp}}{2(1+\nu)}}$}} & theory \\
+        \hline
+        \renewcommand{\arraystretch}{1.5}
+		${G_{||}}$ & random sampling & normal & (0.27, 0.01) & (0.93, 0.33) & Carter~\protect\cite{carter_measurement_2023} \\
+        \hline
+		${\nu_{\perp}}$ & random sampling & uniform & \multicolumn{2}{c|}{(0.2, 0.45)} & \multirow{2}{2.5cm}{\centering Green~\protect\cite{green_wood_1999}} \\
+        \cline{1-5}
+		${\nu_{||}}$ & random sampling & uniform & \multicolumn{2}{c|}{(0.009, 0.086)} & \\
+		\hline
+	\end{tabular}
+\end{table}
+
+\subsubsection{Boundary Conditions}
+\label{sssec:ch4_boundary_conditions}
+Because the parameterized maize stalk model has an elliptical cross-section, it has two symmetry planes. A symmetry boundary condition in the yz plane was used to simplify the model and reduce computational expense. The model was further simplified based on the fact that maize stalk failure typically occurs above the node~\scite{robertson_maize_2016}. This means that it is unnecessary to simulate material that is below the stalk node. Therefore, we only simulated the section above the node, with symmetry across the xy plane~\scite{touzani_finite_2020}; we called these models ‘quarter models’.~\cref{fig:GeometrySimplifications_ch4} summarizes the geometry simplifications applied to each 3D parameterized stalk geometry.
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[scale=1.05]{figures/GeometrySimplifications}
+	\caption[Simplifications to stalk geometry.]{Simplifications to stalk geometry.}
+	\label{fig:GeometrySimplifications_ch4}
+\end{figure}
+
+To verify that these simplifications did not significantly influence the predictive accuracy of our models, we simulated twenty stalk geometries using the ‘quarter model’ simplification and twenty geometries with the full geometry for comparison. The model results between these two groups correlated with each other with an ${r^{2}}$ statistic of over 0.99 for both flexural stiffness and failure strength analyses.
+
+Cantilever bending loading boundary conditions were applied to all quarter-stalk models. In previous papers~\scite{ottesen_development_2023-1}, we had used three point bending boundary conditions because validation data was based on physical three point bending tests. With the model fully validated, we used cantilever loading boundary conditions because these conditions more accurately match the loads experienced by maize stalks in real life~\scite{kumar_bending_2015}.
+
+To calculate flexural stiffness under cantilever loading, a linear static analysis was used. The static analysis consisted of applying simulated loads to calculate deflections. The simulated deflections were used to calculate the flexural stiffness of each model~\scite{ottesen_development_2023-1}. To calculate failure strength, linear buckling analysis was used. This type of analysis gradually applies larger and larger loads until instabilities occur in the model. The results of a linear buckling analysis are an eigenvector (the geometric shape of the instability) and an eigenvalue~\scite{falzon_buckling_2008} (a scalar multiple for applied loads that will result in the corresponding instability). Multiplying this eigenvalue by the applied moment on a stalk gives the maximum moment before failure. 
+
+\subsubsection{Calculating Model Biomass}
+\label{sssec:calculating_model_biomass}
+In addition to mechanical response, model biomass was calculated by multiplying the volume of pith/rind tissue by their respective densities. Pith and rind densities were based upon empirical measurements. These measurements were made using the samples from Chapter 3, which included measurements of cross sectional area and sample length. Densities were calculated by assuming prismatic specimens, calculating volumes with areas/lengths, and then weighing each sample to calculate density (density = mass/volume). This process was repeated for 20 pith samples and 20 rind samples. 
+
+The average density of pith samples was 83 ${kg/m^{3}}$ (standard deviation 27 ${kg/m^{3}}$) and the average density of rind samples was 810 ${kg/m^{3}}$ (standard deviation 280 ${kg/m^{3}}$). The measured mean density of rind samples has very similar densities to wood~\scite{saranpaa_wood_2009} and bamboo~\scite{huang_density_2015}. Because both pith and rind densities had such high variation (coefficients of variance each being roughly 0.3), both pith and rind densities were randomly sampled twenty times for each sensitivity calculation to account for uncertainties due to variations in density. This will be covered in~\cref{ssec:sampling_approach}.
+\newline
+\newline
+\newline
+\newline
+\newline
+To calculate the sensitivity of models to biomass we used the sensitivity approach shown in~\cref{eq:density_calculation}.
+
+\begin{equation}
+	\label{eq:density_calculation}
+	S_{mass} = \frac{\partial m}{\partial X} = \frac{\partial V_{rind} \rho_{rind}}{\partial X} \frac{\partial V_{pith} \rho_{pith}}{\partial X} = \rho_{rind} \frac{\partial V_{rind}}{\partial X} + \rho_{pith} \frac{\partial V_{pith}}{\partial X}
+\end{equation}
+
+Where ${X}$ was a model input (in this case, a geometric parameter, as we did not calculate volume sensitivities for material properties in this chapter), ${m}$ was the model mass, ${V}$ was the model volume, and ${\rho}$ was the tissue density.
+
+Model volumes were estimated using numerical integration. The parameterization technique outlined in~\cref{ssec:refined_parameterization} resulted in major diameter, minor diameter, and rind thickness paths for each stalk model that had a user-defined number of points located between each of the geometric parameters. 100 points were defined between each landmark point. The volume of a particular stalk was calculated by calculating the area of an ellipse using the major and minor diameters at each user-defined point along these paths, and then integrating these areas along the axial length of a stalk model (trapezoidal integration).~\cref{fig:NumericalIntegration} visualizes the approach used to calculate volumes.
+\newline
+\newline
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[scale=1.05]{figures/NumericalIntegration}
+	\caption[Approach used to calculate model volumes using trapezoidal integration.]{Approach used to calculate model volumes using trapezoidal integration. The ‘A’ symbol is the cross sectional area of both the pith and rind ellipse section together, and the ‘a’ symbol is the cross sectional area of just the pith ellipse section. To calculate just the volume of the rind, the total volume is subtracted from the pith volume.}
+	\label{fig:NumericalIntegration}
+\end{figure}
+
+\subsection{Sampling Approach}
+\label{ssec:sampling_approach}
+The reference values for factors ${X}$ and responses ${Y}$ as explained in~\cref{eq:normalized_sensitivity,eq:normalized_sensitivity2} were calculated from ‘base models’. We defined a ‘base model’ as one of the 900 specimen-specific parameterized geometries. Only a subset of these 900 parameterized geometries were chosen for use in sensitivity analysis through stratified sampling. Stratified sampling was used because it provides a more representative sample than simple random sampling~\scite{sarndal_model_2003}. The goal was to calculate 1000 unique values of sensitivities for both material and geometric sensitivities. Stratified sampling consisted of ordering all 900 parameterized geometries by stalk strength (measured from a previous study~\scite{al-zube_measuring_2017,al-zube_elastic_2018}), and then choosing a specified number of ‘base models’ from linearly spaced indices.
+
+\subsubsection{Number of Material Sensitivity Calculations}
+\label{sssec:number_of_material_sensitivity_calculations}
+Twenty ‘base models’ were selected for material sensitivity calculations. For each base model, each of the ten material constants were randomly sampled according to the distributions shown in~\cref{tab:material_ranges_ch4}. To account for variations in material constants, this process was repeated five times for each base model. With ten unique material properties (plus one case where the material properties were at their reference state), five material samplings, and twenty ‘base models’, the total number of simulations required to calculate the material sensitivities was:
+
+\hfill \break
+\textbf{20 geometries  ${\times}$  5 random samples  ${\times}$  (1 reference case + 10 materials) \newline
+= 1100 simulations = 1000 sensitivity values}
+\hfill \break
+
+\subsubsection{Number of Geometric Sensitivity Calculations}
+\label{sssec:number_of_geometric_sensitivity_calculations}
+Fifty ‘base models’ were selected for geometric sensitivity calculations. For each ‘base model’, each of the ten material constants were randomly sampled according to the distributions shown in~\cref{tab:material_ranges_ch4}. Contrary to material sensitivities, the material constants for each ‘base geometry’ were sampled only once. With fifty ‘base models’ and twenty principal components (plus one case where the ‘base model’ geometry was at its reference state), the total number of simulations required to calculate geometric sensitivities was:
+
+\hfill \break
+\textbf{50 geometries ${\times}$ (1 reference state + 20 principal components) \newline
+= 1050 unique simulations = 1000 sensitivity values}
+\hfill \break
+
+\subsubsection{Number of Geometric Mass Sensitivity Calculations}
+\label{sssec:number_of_geometric_mass_sensitivity_calculations}
+The estimated distributions for pith and rind densities as described in~\cref{sssec:calculating_model_biomass} had high coefficients of variance (roughly 0.3). Due to this high uncertainty, for geometric mass sensitivity calculations, we randomly sampled both the pith and rind densities twenty times for each sensitivity calculation. In all other ways, the sensitivity calculation setup was identical to those of~\cref{sssec:number_of_geometric_sensitivity_calculations}, except repeated twenty times with a different randomly sampled pith and rind density using the ranges in~\cref{sssec:calculating_model_biomass}. This means a total of 20,000 sensitivities were calculated for geometric mass sensitivities.
+
+In order to determine whether or not randomly sampling pith and rind densities had a significant impact on biomass sensitivity calculations, an error uncertainty was calculated for each sensitivity calculation. The error uncertainty was calculated with~\cref{eq:error_uncertainty_ch4}.
+
+\begin{equation}
+	\label{eq:error_uncertainty_ch4}
+	u = t_{95, n-1} \frac{s}{\sqrt{n}}
+\end{equation}
+
+Where ${u}$ was the uncertainty in the sensitivity, ${t_{95, n-1}}$ was the t-statistic, ${s}$ was the standard deviation of the sensitivity as a result of variations in random samples for pith and rind densities, and ${n}$ was the number of samples in the sensitivity distribution. In this case, ${n=20}$ because the pith and rind densities were sampled twenty times for each sensitivity calculation.
+
+\subsection{Finite Difference for Sensitivity Calculations}
+\label{ssec:finite_difference_for_sensitivity_calculations}
+We applied a percent standard deviation step size to ${X_{ref}}$ for finite difference calculations. Taking percent standard deviation steps assures that all parameters are changed in proportional amounts. For material sensitivities, this was as simple as just adding 25\% of a standard deviation to the material constant of interest. For geometric sensitivities, percent standard deviation changes were applied to the principal component coefficient matrix ${C}$ (see~\cref{sssec:parameter_grouping_approach}). The principal component coefficient matrix was normalized prior to this so that standard deviations were evenly scaled. In turn, this required the principal component matrix to be scaled by the inverse of the normalization applied to ${C}$. Like material sensitivity calculations, a 25\% standard deviation change was applied to the first twenty principal component coefficients for geometric sensitivity calculations.
+
+\subsection{Regression between Full and Reduced Parameterized Models}
+\label{ssec:regression_between_full_and_reduced_parameterized_models}
+After geometric sensitivities were calculated, statistical analysis was performed to determine whether a ‘reduced’ model consisting of only the first principal component could be constructed to capture the majority of stalk behavior. This approach provided valuable insights into which principal components are most important for predicting stalk strength.
+
+Twenty ‘base geometries’ were created using both the ‘reduced’ model setup (using only the first principal component) and the ‘full’ setup (using all principal components), and then analyzing these geometries for flexural stiffness, failure strength, and biomass. The data were then fit to a linear model and the ${r^{2}}$ value was used as the measure of correlative strength. A high ${r^{2}}$ meant that the ‘reduced’ model setup predicted the majority of flexural stiffness, failure strength, and biomass found using the ‘full’ model setup.
+
+The number of principal components chosen to represent the ‘reduced’ model setup was determined by using the principal components that had the highest flexural stiffness, failure strength, and biomass normalized sensitivities. As will be explained in~\cref{ssec:geometric_sensitivity_results}, there was only one principal component that was distinguishable from the rest. Therefore, only one principal component was used for the ‘reduced’ model setup.
+
+\subsection{Regression between Principal Components and Maize Stalk Behavior}
+\label{ssec:regression_between_principal_components_and_maize_stalk_behavior}
+A statistical analysis was performed to determine whether the principal components correlated with physical stalk behavior. This is important to do because if the principal components are not correlated with physical stalk behavior, then the 3D parameterized model has no connection to reality. It also provides insights into how principal components influence behaviors in actual maize stalks.
+
+A previous study provided the failure strength and section moduli of each of the 900 tested stalks used to generate our principal components~\scite{al-zube_elastic_2018}. Another previous study provided the section moduli of these same 900 stalks~\scite{robertson_maize_2017}. We performed statistical analysis between these failure strengths, section moduli, and the principal component coefficients. Section modulus was considered in this analysis because Robertson found a high correlation between section modulus and failure strength in maize~\scite{robertson_maize_2017}.
+
+Least squares regression was used to calculate correlations between each set of data. This involved fitting a least squares polynomial to principal component, failure strength, and section modulus data. The ${r^{2}}$ statistics of the most parsimonious fitted polynomials were used to characterize the strength of relationship between principal components, failure strength, and section modulus for actual (not modeled) maize stalks~\scite{navidi_statistics_2020}. Failure strength was considered over flexural stiffness and biomass because ultimately, it has a larger impact on stalk lodging than the other two. 
+
+\section{Results}
+\label{sec:ch4_results}
+
+\subsection{Material Sensitivity Results}
+\label{ssec:material_sensitivity_results}
+\cref{fig:FlexMatSens} shows the ranked influence of material properties on flexural stiffness (i.e. sensitivity of flexural stiffness to material properties). The elastic modulus of rind tissue parallel to the fibers (rind ${E_{||}}$), was far more influential than any other material property. Shear modulus of pith and rind tissue parallel to the fibers (rind and pith ${G_{||}}$), as well as the rind Poisson’s ratio parallel to the fibers (rind ${\nu_{||}}$) had median sensitivities less than 10\%. All other material constants had sensitivities less than 1\%. Distributions that were deemed statistically not significant (ns) from one sample t-testing (p > 0.05) are marked with an ‘ns’. \newline
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[scale=0.95]{figures/FlexMatSens}
+	\caption[Flexural stiffness material property sensitivities.]{Flexural stiffness material property sensitivities (ranked).}
+	\label{fig:FlexMatSens}
+\end{figure}
+
+\cref{fig:BucklingMatSens} shows the ranked influence of material properties on failure strength. Failure strength was also most highly influenced by the elastic modulus of rind tissue parallel to the fibers (rind ${E_{||}}$). But unlike flexural stiffness, failure strength was more broadly influenced by other material properties, such as the elastic modulus of pith tissue transverse to the fibers (pith E) and the shear modulus of pith and rind tissue parallel to the fibers (rind and pith ${G_{||}}$). Distributions that were deemed statistically not significant (ns) from one sample t-testing (p > 0.05) are marked with an ‘ns’.
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[scale=0.95]{figures/BucklingMatSens}
+	\caption[Failure strength material sensitivities.]{Failure strength material sensitivities (ranked).}
+	\label{fig:BucklingMatSens}
+\end{figure}
+
+\subsection{Geometric Sensitivity Results}
+\label{ssec:geometric_sensitivity_results}
+\cref{fig:GeomSens} shows the ranking of flexural stiffness, failure strength, and biomass sensitivities with respect to the first twenty principal components. Distributions that were deemed statistically not significant (ns) from one sample t-testing (p > 0.05) are marked with an ‘ns’.
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[scale=1.05]{figures/GeomSens}
+	\caption[Calculated geometric sensitivities for flexural stiffness, failure strength and biomass with respect to the first twenty principal components.]{Calculated geometric sensitivities for flexural stiffness, failure strength and biomass with respect to the first twenty principal components. The number of samples for biomass sensitivities (1000) is different from the other sensitivities due to random sampling of pith and rind densities (see~\cref{sssec:number_of_geometric_mass_sensitivity_calculations})}
+	\label{fig:GeomSens}
+\end{figure}
+
+The first principal component had the highest influence on model flexural stiffness (median 55\%), failure strength (median 45\%), and biomass (median 27\%). All other principal components had relatively low influence. For flexural stiffness sensitivities, all remaining principal components had median sensitivities below +/- 6\%. For failure strength sensitivities, all other principal components had median sensitivities below +/- 7\%. For mass sensitivities, all other principal components had median sensitivities below +/- 4\%.
+
+Uncertainty in the value of pith density and rind density were found to have little effect on the biomass sensitivities shown in~\cref{fig:GeomSens}. An uncertainty analysis revealed that for each principal component sensitivity, the maximum error due to density uncertainty was less than +/- 0.5 percent normalized sensitivity. This was a small enough error that error bars were not included for biomass sensitivities in~\cref{fig:GeomSens}.
+
+\subsection{Relationships between Mass and Flexural Stiffness/Failure Strength Sensitivities}
+\label{ssec:relationships_between_mass_and_flexural_stiffness_failure_strength_sensitivities}
+\cref{fig:scatter} shows a scatter-plot between biomass sensitivities and flexural stiffness sensitivities / failure strength sensitivities. Both plots show positive correlations between stiffness / strength and biomass. The cluster of data around the origin of these charts shows that all other principal component sensitivities (in various colors) had much weaker relationships with biomass sensitivities.
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[scale=1.05]{figures/scatter}
+	\caption[Scatter plots of mass sensitivities to flexural stiffness/failure strength sensitivities.]{Scatter plots of mass sensitivities to flexural stiffness/failure strength sensitivities. The first principal component sensitivities are shown in blue, and all other principal component sensitivities are shown in various colors.}
+	\label{fig:scatter}
+\end{figure}
+
+\subsection{Statistical Analysis of Full and Reduced Parameterized Models}
+\label{ssec:statistical_analysis_of_full_and_reduced_parameterized_models}
+\cref{fig:FullvReduced} shows the linear model equations and ${r^{2}}$ statistics comparing ‘reduced’ parameterized models and ‘full’ parameterized models. The sensitivity results from~\cref{ssec:geometric_sensitivity_results} indicated that only the first principal component is distinguishable from the other principal components for flexural stiffness, failure strength, and biomass calculations. As such, the ‘reduced’ parameterized model was formed with only the first principal component present. The results of this analysis indicated that 95\% of flexural stiffness, 86\% of failure strength, and 95\% of biomass can be predicted in parameterized stalk models using only the first principal component. The scatter plots for these relationships are shown in~\cref{fig:FullvReduced}.
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[scale=1.05]{figures/FullvReduced}
+	\caption[Full and reduced parameterized model comparison.]{Full and reduced parameterized model comparison. The x-axis in each case is the quantity calculated by the ‘full’ parameterized model (with all principal components included) and the y-axis is the quantity calculated by the ‘reduced’ parameterized model (with only the first principal component).}
+	\label{fig:FullvReduced}
+\end{figure}
+
+\subsection{Statistical Analysis of Principal Components and Maize Stalk Behavior}
+\label{ssec:statistical_analysis_of_principal_components_and_maize_stalk_behavior}
+We now pivot from modeling results to statistical analysis of empirical data (as outlined in~\cref{ssec:regression_between_principal_components_and_maize_stalk_behavior}).~\cref{fig:MultipleComparison} shows the relationships between actual maize stalk failure strength, the first principal component as it was extracted from the physical geometry of maize stalks, and section modulus of real maize stalk cross-sections. All relationships were fit with 3rd order polynomials. Both the first principal component and section modulus are very strong predictors of stalk strength (${r^{2}=0.8}$). The relationship between the first principal component and section modulus was extremely strong (${r^{2}=0.96}$). This indicates that the first principal component is essentially the same construct as the section modulus.  All other principal components  exhibited ${r^{2}}$ values of less than 0.01.
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[scale=0.95]{figures/MultipleComparison}
+	\caption[Comparisons between maize stalk failure strength, principal component 1, and section modulus.]{Comparisons between maize stalk failure strength, principal component 1, and section modulus. The fit lines shown are third order fits.}
+	\label{fig:MultipleComparison}
+\end{figure}
+
+\section{Discussion}
+\label{sec:ch4_discussion}
+
+\subsection{Material Sensitivities}
+\label{ssec:material_sensitivities}
+Material sensitivity analysis provided similar results to previous studies~\scite{stubbs_maize_2022}. The most influential material property for both flexural stiffness and failure strength analyses was the longitudinal modulus of the rind tissue (rind ${E_{||}}$). Higher variation in material sensitivities was observed for failure strength, which is similar to the phenomenon observed in past studies~\scite{ottesen_development_2023-1}. This is likely the case because failure modeling is a complicated phenomenon dependent on more factors than static analysis~\scite{hitchings_nafems_2007}.
+
+\subsection{Geometric Sensitivities}
+\label{ssec:geometric_sensitivities}
+Geometric sensitivity analysis revealed that the first principal component had high sensitivity values for flexural stiffness, failure strength, and biomass. All other principal components had low sensitivity values. These results indicate that the majority of stalk behavior is influenced by only the first principal component. 
+
+The results shown in~\cref{fig:scatter} further confirm this point. Looking at~\cref{fig:scatter}, it is obvious that the first principal component stands apart from all other principal components. The other principal components are barely distinguishable from each other, and are centered near (0,0). 
+
+The fact that there is only one influential factor that influences model behavior suggests that mass constrained optimization studies concerning 3D parameterized maize stalk models using principal components as factors may not be feasible. This is because constrained optimization usually requires multiple influential factors, whereas the 3D parameterized model only has one. We had hoped that this sensitivity analysis would suggest strategies for increasing stalk strength without increasing biomass. Unfortunately, these results suggest that there is little possibility of increasing stalk strength without increasing biomass. As shown in~\cref{fig:scatter}, when strength increases, it is virtually always accompanied by an increase in biomass.
+
+Lastly, because the maximum error uncertainty in biomass sensitivities was less than +/- 0.5, we can conclude that uncertainty in pith and rind densities does not affect the results of this chapter. The estimated pith and rind densities had distributions with high variation and were only ‘ballpark’ estimates. Fortunately, the accuracy of density estimates did not significantly affect our biomass sensitivity calculations.
+
+\subsection{Reduced Models and Principal Components}
+\label{ssec:reduced_models_and_principal_components}
+Statistical analysis between ‘reduced’ parameterized models that only contained the first principal component and ‘full’ parameterized models that contained all principal components revealed that 85\% of model failure strength can be predicted by only the first principal component. This indicates that the geometric behaviors quantified by the other principal components associated with stalk geometry have little impact on strength. The geometric behavior associated with the first principal component, however, is the primary determinant of stalk strength.
+
+\subsection{Section Modulus}
+\label{ssec:section_modulus}
+Prior to this paper, the relationship between maize stalk strength and section modulus was based on purely observational “mechanics-based regression”~\scite{robertson_maize_2017}. This approach used insights from structural mechanics to inform the regression approach. The structural quantity of section modulus was found to be the strongest predictor of stalk strength. In a similar manner, flexural stiffness was also found to be a good predictor of stalk strength. 
+
+A single principal component was found to be closely related to flexural stiffness, stalk strength, and biomass. Principal component analysis is a purely statistical approach that identifies natural patterns in data sets without making any prior assumptions about the resulting patterns. Modification of the principal components through sensitivity analysis demonstrated that the first principal component had a strong influence on flexural stiffness, stalk strength, and biomass. In addition, the remaining principal components had very little influence on the stiffness, strength, and biomass. This finding was reinforced by creating reduced models that included the first principal component but omitted all other components. These reduced models produced results that were extremely close to the results of models that included all principal components~\cref{fig:FullvReduced}. 
+
+As a purely statistical method, principal component analysis doesn’t “know” anything about structural mechanics.  Yet the first principal component was found to be extremely closely related to the section modulus ${(r^{2} = 0.96}$).  The analysis therefore provides independent support for the idea that section modulus is the primary predictor of stalk strength. In other words, a purely statistical approach (principal component analysis) and mechanics-based regression provided independent paths to the same conclusions. 
+
+\subsection{Limitations}
+\label{ssec:limitations}
+Several limitations affect the results of this chapter. For one, there are several side effects to quarter-symmetric models. Calculated buckling modes can no longer be antisymmetric~\scite{hitchings_nafems_2007}, and therefore can no longer occur on the bottom part of a modeled stalk. Also, any calculated values such as flexural stiffness or failure moment are half the value of their full-model counterparts. These problems can be remedied by adjusting output values for quarter-symmetric models by a factor of two.
+Several limitations affect the results of this chapter. For one, there are several side effects to quarter-symmetric models. Calculated buckling modes can no longer be antisymmetric~\scite{hitchings_nafems_2007}, and therefore can no longer occur on the bottom part of a modeled stalk. Also, any calculated values such as flexural stiffness or failure moment are half the value of their full-model counterparts. These problems can be remedied by adjusting output values for quarter-symmetric models by a factor of two.
+
+The models were also based on fully matured, dried, healthy maize stalks. This means that the calculated sensitivities are only applicable to stalks of a similar caliber. Because maize stalks have been known to behave differently when unhealthy, moist, or during different stages of development~\scite{sutherland_influence_2022,xue_physiological_2021}, these sensitivities will likely be affected by any changes to stalk condition.
+
+Sensitivities were also calculated within 25\% of a standard deviation of either principal component coefficients or material properties. This means that these sensitivities are only accurate within this range. The models may behave differently outside of this range. In spite of this, we believe that keeping to within 25\% of a standard deviation for the relevant quantities is important to preserve behaviors of maize stalks seen in nature, and that going outside of this bound may lead to inaccuracies. 
+
+

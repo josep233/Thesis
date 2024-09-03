@@ -1,0 +1,105 @@
+\chapter{Introduction}
+\label{ch:intro}
+
+
+\section{Problem}
+\label{sec:problem}
+Maize is the most produced crop in the world~\scite{usda_grain_2024}. It accounts for 95\% of feed in the United States, occupying over 90 million acres of farmland each year~\scite{usda_feed_2023}. It also comprises 94\% of ethanol production~\scite{us_department_of_energy_ethanol_2024}, which is a major source of fuel in the world. Maize and its byproducts are a major part of the world market. Because of this, any issue in the growth or harvest of maize has a long and lasting impact. One such problem is stalk lodging.
+
+Stalk lodging is the breakage of maize stalks below the ear, and is often caused by wind (see ~\cref{fig:StalkLodging}). This can lead to harvesting problems and can significantly impact crop yield. It has been estimated that 5\% of maize is affected by stalk lodging each year~\scite{duvick_contribution_2005}, most often at the time of peak maturity. The failure process associated with stalk lodging is complex and depends on many factors. Research on this phenomenon has focused on environmental effects~\scite{thompson_corn_2014}, rapid phenotyping~\scite{robertson_improved_2014}, and stalk morphology~\scite{von_forell_preventing_2015}, among others. 
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[scale=1]{figures/StalkLodging}
+	\caption[Stalk lodging in a field.]{Stalk lodging in a field near Ames, Iowa, October 2019.}
+	\label{fig:StalkLodging}
+\end{figure}
+
+One of the most promising areas of study into stalk lodging is the correlation between stalk geometry and strength~\scite{robertson_maize_2017}. It has been theorized that modification to the morphological factors of maize stalks could decrease stalk lodging~\scite{von_forell_preventing_2015}. In order to provide support for this theory, finite element modeling techniques have been applied to maize stalk models to find a relationship between stalk geometry and stalk strength~\scite{von_forell_preventing_2015,ottesen_parameterised_2022,stubbs_maize_2022,ottesen_development_2023}.
+
+This thesis will continue the use of finite element modeling to characterize how maize stalk material constants and morphology influence strength. The sections below will describe the modeling approaches that have been used in the past to predict maize stalk behavior. 
+
+
+\section{Modeling Background}
+\label{sec:modeling_background}
+Maize stalks are composed of two materials: a hard outer rind and a soft inner pith. An important characteristic of both of these materials is the presence of inner fibers, which results in non-isotropic behavior. This means that both the pith and rind can be modeled as transverse isotropic materials, which require twelve material constants (ten of which are independent) to fully define~\scite{hashmi_comprehensive_2014}.
+
+Relatively little research into maize stalk material constants has been conducted. Although data regarding maize stalk material constants are scarce, some of the twelve material constants have been measured previously. Notable studies include Stubbs~\scite{stubbs_maize_2022}, who measured transverse elastic modulus of pith and rind tissue; Al-Zube~\scite{al-zube_elastic_2018}, who measured longitudinal elastic modulus of rind tissue; Zhang~\scite{zhang_tensile_2016,zhang_mechanical_2017}, who measured longitudinal elastic modulus of pith and rind tissue; and Sutherland~\scite{sutherland_influence_2022}, who measured longitudinal elastic modulus of rind tissue. These constants have been used in a variety of applications, including analytic modeling and finite element analysis.
+
+Maize stalks follow a growth pattern of nodes followed by internodal regions (see ~\cref{fig:NodeVInternode}). Nodal regions have a higher proportion of rind and are generally more resistant to damage than internode regions. It has been found that the vast majority of failure occurs in the region just 4 cm above the node~\scite{robertson_maize_2016}.
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[scale=1.05]{figures/NodeVInternode}
+	\caption[Maize stalk physiology.]{Maize stalk physiology, from Ottesen~\protect\cite{ottesen_parameterised_2022}.}
+	\label{fig:NodeVInternode}
+\end{figure}
+
+Various finite element modeling techniques have been used to predict the behavior of maize stalks. Beginning models were created by CT-scanning maize stalks along their length and then reconstructing the geometry using SolidWorks (Dassault Systèmes SE, Vélizy-Villacoublay, France). These high fidelity models were then imported into finite element analysis programs and analyzed for flexural stiffness and failure strength testing (see ~\cref{fig:CTtoFEA}). These first studies suggested that geometry has a more important role on stalk strength than material constants~\scite{von_forell_preventing_2015}. 
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[scale=1.01]{figures/CTtoFEA}
+	\caption[CT scan-based models.]{CT scan-based models, from Stubbs~\protect\cite{stubbs_maize_2022}.}
+	\label{fig:CTtoFEA}
+\end{figure}
+
+Because the CT-scan models indicated such a high dependence of stalk strength on geometry, it was theorized that making small changes to stalk geometry could increase resistance to stalk lodging. In order to support this theory, researchers needed a 3D model of maize stalks with geometry that could be manipulated manually. This could not be done with CT-scan models, as they were specimen-specific, and could not be easily manipulated. Researchers needed a simplified model that could be used to more directly control geometric parameters to see how they affected response.
+
+Simplifying the maize stalk model began with creation of 2D parameterized stalk section models. Principal component parameterization of these models resulted in elliptical cross sections, which were simpler than their CT scan counterparts (see ~\cref{fig:EllipseAssumption}). It was found that modeling the cross sections of the stalks as ellipses produced FEA responses that were indistinguishable from those of the CT scan cross sections~\scite{ottesen_parameterised_2022}.
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[scale=1.05]{figures/EllipseAssumption}
+	\caption[Ellipse assumption.]{Ellipse assumption, from Ottesen~\protect\cite{ottesen_parameterised_2022}.}
+	\label{fig:EllipseAssumption}
+\end{figure}
+
+These 2D parameterized ellipse models were also used to create 3D prismatic models for analysis in FEA. This analysis was an important stepping stone to create simpler maize stalk models, but due to their prismatic nature, did not contain important features found in maize stalks such as node and internode regions. The problem still remained: researchers needed a 3D model that was simple enough to understand but complex enough to have high accuracy. 
+
+\section{The 3D Parameterized Maize Stalk Model}
+\label{sec:the_3d_parameterized_maize_stalk_model}
+Ottesen~\scite{ottesen_development_2023-1} was the first researcher to develop a 3-dimensional parameterized maize stalk model. These models were created using CT data, but were simplified using an ellipse assumption~\scite{ottesen_parameterised_2022} and parameterization (see  ~\cref{fig:OttesenParameterization}). Consistent features from over 900 CT-scans were identified, and principal component analysis (PCA) was used to create models with 51 distinct parameters. 
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[scale=1.05]{figures/OttesenParameterization2}
+	\caption[Parameterization by Ottesen.]{Parameterization by Ottesen~\protect\cite{ottesen_development_2023-1} based on the ellipse assumption and PCA parameterization.}
+	\label{fig:OttesenParameterization}
+\end{figure}
+
+The 3D parameterized stalk model was validated by simulating three point bending tests in FEA and comparing these results to physical three point bending tests conducted in a previous study~\scite{al-zube_measuring_2017,al-zube_elastic_2018}.
+
+The 3D parameterized maize stalk model is a powerful tool for understanding the stalk lodging problem. It allows for direct control over geometric parameters while still preserving the behavior of actual maize stalks. This opens the door to sensitivity studies, which will inform researchers of which specific geometric maize stalk features contribute to stalk flexural stiffness, failure strength, and biomass.
+\newline
+\newline
+
+\section{Purpose}
+\label{sec:purpose}
+The purpose of this research is to better understand the factors that influence maize stalk strength. This involves three main objectives:
+
+\begin{enumerate}
+	\item Improve and automate the process of creating and analyzing finite element models of the maize stalk; 
+	\item Measure mechanical tissue properties that have not previously been reported;
+	\item Understand the relationships between material/geometric properties and model flexural stiffness, failure strength, and biomass.
+\end{enumerate}
+
+These objectives will gain new knowledge concerning maize stalks that can be used to decrease stalk lodging.
+\\ \hfill \break
+\textit{Objective 1: Improve and automate the process of creating and analyzing finite element models of the maize stalk.}
+\\
+Finite element analysis is used to solve for flexural stiffness and failure strength of the 3D parameterized maize stalk model. This requires many operations such as importing the geometry,  applying boundary conditions, assigning material constants, and applying finite element meshes. Previously, this process was done manually by an experienced researcher.
+
+Future studies using this automation process will involve creating thousands of finite element models. This means that it is of utmost importance that the analysis of the 3D parameterized maize stalk model be automated. This automation is the subject of~\cref{ch:ch2}.
+\\ \hfill \break
+\textit{Objective 2: Measure mechanical tissue properties that have not previously been reported.}
+\\
+This thesis will further improve the 3D parameterized maize stalk model by measuring two material constants that are involved in their use in finite element analysis. These material constants are the longitudinal shear modulus of both the pith and rind tissue. The measurement of these material constants is the subject of~\cref{ch:ch3}.
+\\ \hfill \break
+\textit{Objective 3: Understand the relationships between material/geometric properties and model flexural stiffness, failure strength, and biomass.}
+\\
+The geometry of maize stalks is a promising factor involved in stalk lodging. Using the 3D parameterized maize stalk models, we can quantify the relationship between specific geometric features of these models and model response (flexural stiffness, failure strength, and biomass) through sensitivity analysis. The sensitivity analysis of model response to geometric and material parameters is the subject of~\cref{ch:ch4}.
+\\ \hfill \break
+\textbf{Anticipated Outcomes:}
+\\
+The results of this research will be an improved and automated version of the 3D parameterized maize stalk model, and evidence supporting the relationship between maize stalk geometry and stalk behavior. The results of sensitivity analysis will be used as direct evidence supporting whether or not maize stalk geometry could be efficiently leveraged to decrease stalk lodging. These insights will help researchers more effectively address the problem of stalk lodging, which will increase yearly maize yield.

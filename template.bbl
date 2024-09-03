@@ -1,0 +1,2204 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{usda_grain_2024}{report}{}
+      \name{author}{1}{}{%
+        {{hash=96b6352f0feb7beef6ead98c27472286}{%
+           family={USDA},
+           familyi={U\bibinitperiod}}}%
+      }
+      \strng{namehash}{96b6352f0feb7beef6ead98c27472286}
+      \strng{fullhash}{96b6352f0feb7beef6ead98c27472286}
+      \strng{bibnamehash}{96b6352f0feb7beef6ead98c27472286}
+      \strng{authorbibnamehash}{96b6352f0feb7beef6ead98c27472286}
+      \strng{authornamehash}{96b6352f0feb7beef6ead98c27472286}
+      \strng{authorfullhash}{96b6352f0feb7beef6ead98c27472286}
+      \field{extraname}{1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Grain: {World} {Markets} and {Trade}}
+      \field{type}{techreport}
+      \field{year}{2024}
+    \endentry
+    \entry{usda_feed_2023}{report}{}
+      \name{author}{1}{}{%
+        {{hash=96b6352f0feb7beef6ead98c27472286}{%
+           family={USDA},
+           familyi={U\bibinitperiod}}}%
+      }
+      \strng{namehash}{96b6352f0feb7beef6ead98c27472286}
+      \strng{fullhash}{96b6352f0feb7beef6ead98c27472286}
+      \strng{bibnamehash}{96b6352f0feb7beef6ead98c27472286}
+      \strng{authorbibnamehash}{96b6352f0feb7beef6ead98c27472286}
+      \strng{authornamehash}{96b6352f0feb7beef6ead98c27472286}
+      \strng{authorfullhash}{96b6352f0feb7beef6ead98c27472286}
+      \field{extraname}{2}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Feed {Grains} {Sector} at a {Glance}}
+      \field{type}{techreport}
+      \field{year}{2023}
+    \endentry
+    \entry{us_department_of_energy_ethanol_2024}{report}{}
+      \name{author}{1}{}{%
+        {{hash=b5a84edc9bbf0c4be505dd1100ebb240}{%
+           family={Energy},
+           familyi={E\bibinitperiod},
+           given={US\bibnamedelima Department},
+           giveni={U\bibinitperiod\bibinitdelim D\bibinitperiod},
+           prefix={of},
+           prefixi={o\bibinitperiod}}}%
+      }
+      \strng{namehash}{b5a84edc9bbf0c4be505dd1100ebb240}
+      \strng{fullhash}{b5a84edc9bbf0c4be505dd1100ebb240}
+      \strng{bibnamehash}{b5a84edc9bbf0c4be505dd1100ebb240}
+      \strng{authorbibnamehash}{b5a84edc9bbf0c4be505dd1100ebb240}
+      \strng{authornamehash}{b5a84edc9bbf0c4be505dd1100ebb240}
+      \strng{authorfullhash}{b5a84edc9bbf0c4be505dd1100ebb240}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Ethanol {Fuel} {Basics}}
+      \field{type}{techreport}
+      \field{year}{2024}
+    \endentry
+    \entry{duvick_contribution_2005}{article}{}
+      \name{author}{1}{}{%
+        {{hash=f7f0bd9463449b16cc981ebe82882a64}{%
+           family={Duvick},
+           familyi={D\bibinitperiod},
+           given={D\bibnamedelima N},
+           giveni={D\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+      }
+      \strng{namehash}{f7f0bd9463449b16cc981ebe82882a64}
+      \strng{fullhash}{f7f0bd9463449b16cc981ebe82882a64}
+      \strng{bibnamehash}{f7f0bd9463449b16cc981ebe82882a64}
+      \strng{authorbibnamehash}{f7f0bd9463449b16cc981ebe82882a64}
+      \strng{authornamehash}{f7f0bd9463449b16cc981ebe82882a64}
+      \strng{authorfullhash}{f7f0bd9463449b16cc981ebe82882a64}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Advances in Agronomy}
+      \field{title}{The {Contribution} of {Breeding} to {Yield} {Advances} in maize}
+      \field{volume}{86}
+      \field{year}{2005}
+      \field{pages}{83\bibrangedash 145}
+      \range{pages}{63}
+    \endentry
+    \entry{thompson_corn_2014}{article}{}
+      \name{author}{2}{}{%
+        {{hash=ee4891015c6cf2783cf91713fe648f7d}{%
+           family={Thompson},
+           familyi={T\bibinitperiod},
+           given={Jena\bibnamedelima L.},
+           giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=b38a56203da274c216dfecf29c8ce5e5}{%
+           family={Tyner},
+           familyi={T\bibinitperiod},
+           given={Wallace\bibnamedelima E.},
+           giveni={W\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \strng{namehash}{a19fdadd2efb3e0241599cd0d1d88181}
+      \strng{fullhash}{f13fdc4ef8ad589632501c9971092996}
+      \strng{bibnamehash}{f13fdc4ef8ad589632501c9971092996}
+      \strng{authorbibnamehash}{f13fdc4ef8ad589632501c9971092996}
+      \strng{authornamehash}{a19fdadd2efb3e0241599cd0d1d88181}
+      \strng{authorfullhash}{f13fdc4ef8ad589632501c9971092996}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Biomass and Bioenergy}
+      \field{title}{Corn stover for bioenergy production: {Cost} estimates and farmer supply response}
+      \field{volume}{62}
+      \field{year}{2014}
+      \field{pages}{166\bibrangedash 173}
+      \range{pages}{8}
+    \endentry
+    \entry{robertson_improved_2014}{article}{}
+      \name{author}{4}{}{%
+        {{hash=af00e1652441bd140bd6e1825dedbafa}{%
+           family={Robertson},
+           familyi={R\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+        {{hash=fc98196d8e93ca40c4f507024aefd07f}{%
+           family={Smith},
+           familyi={S\bibinitperiod},
+           given={Simeon},
+           giveni={S\bibinitperiod}}}%
+        {{hash=85c590ac8eafd65630e42029d82d0aa4}{%
+           family={Gardunia},
+           familyi={G\bibinitperiod},
+           given={Brian},
+           giveni={B\bibinitperiod}}}%
+        {{hash=b97457e5975e9d0432883a69c5c3d07c}{%
+           family={Cook},
+           familyi={C\bibinitperiod},
+           given={Douglas\bibnamedelima D},
+           giveni={D\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \strng{namehash}{8171186ce4d818baa0b04c30669c6c22}
+      \strng{fullhash}{05dc2760c43a5d0de4091b0593fcabdf}
+      \strng{bibnamehash}{8171186ce4d818baa0b04c30669c6c22}
+      \strng{authorbibnamehash}{8171186ce4d818baa0b04c30669c6c22}
+      \strng{authornamehash}{8171186ce4d818baa0b04c30669c6c22}
+      \strng{authorfullhash}{05dc2760c43a5d0de4091b0593fcabdf}
+      \field{extraname}{1}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Crop Science}
+      \field{title}{An {Improved} {Method} for {Accurate} {Phenotyping} of {Corn} {Stalk} {Strength}}
+      \field{year}{2014}
+    \endentry
+    \entry{von_forell_preventing_2015}{article}{}
+      \name{author}{4}{}{%
+        {{hash=f22f87b283f60e02a946ca8d35c9f870}{%
+           family={Von\bibnamedelima Forell},
+           familyi={V\bibinitperiod\bibinitdelim F\bibinitperiod},
+           given={Greg},
+           giveni={G\bibinitperiod}}}%
+        {{hash=af00e1652441bd140bd6e1825dedbafa}{%
+           family={Robertson},
+           familyi={R\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+        {{hash=d138eb5b01e003aaefa84aba6cad5537}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={Shien},
+           giveni={S\bibinitperiod}}}%
+        {{hash=8097b93c58317ae1852ab32cce2b1c92}{%
+           family={Cook},
+           familyi={C\bibinitperiod},
+           given={Douglas},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{bc1d2327c36aed08d5f15e16aebac917}
+      \strng{fullhash}{46d65822194e72a4aced6da6c6080677}
+      \strng{bibnamehash}{bc1d2327c36aed08d5f15e16aebac917}
+      \strng{authorbibnamehash}{bc1d2327c36aed08d5f15e16aebac917}
+      \strng{authornamehash}{bc1d2327c36aed08d5f15e16aebac917}
+      \strng{authorfullhash}{46d65822194e72a4aced6da6c6080677}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Experimental Botany}
+      \field{number}{14}
+      \field{title}{Preventing lodging in bioenergy crops: a biomechanical analysis of maize stalks suggests a new approach}
+      \field{volume}{66}
+      \field{year}{2015}
+      \field{pages}{4367\bibrangedash 4371}
+      \range{pages}{5}
+    \endentry
+    \entry{robertson_maize_2017}{article}{}
+      \name{author}{3}{}{%
+        {{hash=af00e1652441bd140bd6e1825dedbafa}{%
+           family={Robertson},
+           familyi={R\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+        {{hash=d07d628985c248c928c5442f8052aafd}{%
+           family={Julias},
+           familyi={J\bibinitperiod},
+           given={Margaret},
+           giveni={M\bibinitperiod}}}%
+        {{hash=b97457e5975e9d0432883a69c5c3d07c}{%
+           family={Cook},
+           familyi={C\bibinitperiod},
+           given={Douglas\bibnamedelima D},
+           giveni={D\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \strng{namehash}{8171186ce4d818baa0b04c30669c6c22}
+      \strng{fullhash}{a983c59d26b248ff6898190315a8d860}
+      \strng{bibnamehash}{a983c59d26b248ff6898190315a8d860}
+      \strng{authorbibnamehash}{a983c59d26b248ff6898190315a8d860}
+      \strng{authornamehash}{8171186ce4d818baa0b04c30669c6c22}
+      \strng{authorfullhash}{a983c59d26b248ff6898190315a8d860}
+      \field{extraname}{2}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Crop Science}
+      \field{title}{Maize {Stalk} {Lodging}: {Morphological} {Determinants} of {Stalk} {Strength}}
+      \field{year}{2017}
+    \endentry
+    \entry{ottesen_parameterised_2022}{article}{}
+      \name{author}{4}{}{%
+        {{hash=279ecda7e76ebe58c7cfaf65d2da2a27}{%
+           family={Ottesen},
+           familyi={O\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+        {{hash=74963a757c6e28ea5ac70e1a07c93ba2}{%
+           family={Larson},
+           familyi={L\bibinitperiod},
+           given={Ryan},
+           giveni={R\bibinitperiod}}}%
+        {{hash=ef8b5a1b6332cd93b63e34607eeb08aa}{%
+           family={Stubbs},
+           familyi={S\bibinitperiod},
+           given={Christopher},
+           giveni={C\bibinitperiod}}}%
+        {{hash=8097b93c58317ae1852ab32cce2b1c92}{%
+           family={Cook},
+           familyi={C\bibinitperiod},
+           given={Douglas},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {English}%
+      }
+      \strng{namehash}{b765247ef07556f5b523a3fb7779fb34}
+      \strng{fullhash}{3b5a48a56552f23ea7d90e39648a2fee}
+      \strng{bibnamehash}{b765247ef07556f5b523a3fb7779fb34}
+      \strng{authorbibnamehash}{b765247ef07556f5b523a3fb7779fb34}
+      \strng{authornamehash}{b765247ef07556f5b523a3fb7779fb34}
+      \strng{authorfullhash}{3b5a48a56552f23ea7d90e39648a2fee}
+      \field{extraname}{1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{15375110}
+      \field{journaltitle}{Biosystems Engineering}
+      \field{title}{A parameterised model of maize stem cross sectional morphology}
+      \field{volume}{218}
+      \field{year}{2022}
+      \field{pages}{110\bibrangedash 123}
+      \range{pages}{14}
+    \endentry
+    \entry{stubbs_maize_2022}{article}{}
+      \name{author}{3}{}{%
+        {{hash=ef8b5a1b6332cd93b63e34607eeb08aa}{%
+           family={Stubbs},
+           familyi={S\bibinitperiod},
+           given={Christopher},
+           giveni={C\bibinitperiod}}}%
+        {{hash=74963a757c6e28ea5ac70e1a07c93ba2}{%
+           family={Larson},
+           familyi={L\bibinitperiod},
+           given={Ryan},
+           giveni={R\bibinitperiod}}}%
+        {{hash=8097b93c58317ae1852ab32cce2b1c92}{%
+           family={Cook},
+           familyi={C\bibinitperiod},
+           given={Douglas},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{b134551d49795e37d57a07e016f06c85}
+      \strng{fullhash}{cc046eecbec0622eef36bda91e2e2f38}
+      \strng{bibnamehash}{cc046eecbec0622eef36bda91e2e2f38}
+      \strng{authorbibnamehash}{cc046eecbec0622eef36bda91e2e2f38}
+      \strng{authornamehash}{b134551d49795e37d57a07e016f06c85}
+      \strng{authorfullhash}{cc046eecbec0622eef36bda91e2e2f38}
+      \field{extraname}{1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Maize stalk stiffness and strength are primarily determined by morphological factors}
+      \field{year}{2022}
+    \endentry
+    \entry{ottesen_development_2023}{article}{}
+      \name{author}{5}{}{%
+        {{hash=279ecda7e76ebe58c7cfaf65d2da2a27}{%
+           family={Ottesen},
+           familyi={O\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+        {{hash=45b1f7c5e33c6a8fc2a634d2f80c3686}{%
+           family={Carter},
+           familyi={C\bibinitperiod},
+           given={Joseph},
+           giveni={J\bibinitperiod}}}%
+        {{hash=125347ebc062548b09b0050f9e69f23b}{%
+           family={Hall},
+           familyi={H\bibinitperiod},
+           given={Ryan},
+           giveni={R\bibinitperiod}}}%
+        {{hash=78587725baa54d93aaff22d3ffe54e42}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Nan-Wei},
+           giveni={N\bibinithyphendelim W\bibinitperiod}}}%
+        {{hash=8097b93c58317ae1852ab32cce2b1c92}{%
+           family={Cook},
+           familyi={C\bibinitperiod},
+           given={Douglas},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{b765247ef07556f5b523a3fb7779fb34}
+      \strng{fullhash}{4b5e565923b7911b5d613670320237d0}
+      \strng{bibnamehash}{b765247ef07556f5b523a3fb7779fb34}
+      \strng{authorbibnamehash}{b765247ef07556f5b523a3fb7779fb34}
+      \strng{authornamehash}{b765247ef07556f5b523a3fb7779fb34}
+      \strng{authorfullhash}{4b5e565923b7911b5d613670320237d0}
+      \field{extraname}{2}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{In Silico Plants}
+      \field{title}{Development and {Stochastic} {Validation} of a {Parameterized} {Model} of {Maize} {Stalk} {Flexure} and {Buckling}}
+      \field{year}{2023}
+    \endentry
+    \entry{hashmi_comprehensive_2014}{book}{}
+      \name{author}{4}{}{%
+        {{hash=19f084015e38f25902af6f06b1f1ef3d}{%
+           family={Hashmi},
+           familyi={H\bibinitperiod},
+           given={Saleem},
+           giveni={S\bibinitperiod}}}%
+        {{hash=0a01b884c0c7429272886facdb38173d}{%
+           family={Van\bibnamedelima Tyne},
+           familyi={V\bibinitperiod\bibinitdelim T\bibinitperiod},
+           given={Chester\bibnamedelima J},
+           giveni={C\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=46baf9c31a3daf221208a99b812ac4af}{%
+           family={Batalha},
+           familyi={B\bibinitperiod},
+           given={Gilmar\bibnamedelima Ferriera},
+           giveni={G\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=be153c608a4b8f97c9347317b7ab392d}{%
+           family={Yilbas},
+           familyi={Y\bibinitperiod},
+           given={Bekir},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{abb3670db35132bc3ada7bdd0eaa33f6}
+      \strng{fullhash}{62bf16be0ca551ddc374773304e1a1cc}
+      \strng{bibnamehash}{abb3670db35132bc3ada7bdd0eaa33f6}
+      \strng{authorbibnamehash}{abb3670db35132bc3ada7bdd0eaa33f6}
+      \strng{authornamehash}{abb3670db35132bc3ada7bdd0eaa33f6}
+      \strng{authorfullhash}{62bf16be0ca551ddc374773304e1a1cc}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Comprehensive {Materials} {Processing}}
+      \field{year}{2014}
+    \endentry
+    \entry{al-zube_elastic_2018}{article}{}
+      \name{author}{4}{}{%
+        {{hash=e6eea231de38cfd9874861ef8f4ca5c5}{%
+           family={Al-Zube},
+           familyi={A\bibinithyphendelim Z\bibinitperiod},
+           given={Loay},
+           giveni={L\bibinitperiod}}}%
+        {{hash=6b443dd49ae87c4b07031aa653fb3015}{%
+           family={Wenhuan},
+           familyi={W\bibinitperiod},
+           given={Sun},
+           giveni={S\bibinitperiod}}}%
+        {{hash=af00e1652441bd140bd6e1825dedbafa}{%
+           family={Robertson},
+           familyi={R\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+        {{hash=8097b93c58317ae1852ab32cce2b1c92}{%
+           family={Cook},
+           familyi={C\bibinitperiod},
+           given={Douglas},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{d14c24b06a78f49d4ab2b03f49c2b500}
+      \strng{fullhash}{9912cb0048066a3e95f0ab51de18d11a}
+      \strng{bibnamehash}{d14c24b06a78f49d4ab2b03f49c2b500}
+      \strng{authorbibnamehash}{d14c24b06a78f49d4ab2b03f49c2b500}
+      \strng{authornamehash}{d14c24b06a78f49d4ab2b03f49c2b500}
+      \strng{authorfullhash}{9912cb0048066a3e95f0ab51de18d11a}
+      \field{extraname}{1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Plant Methods}
+      \field{title}{The elastic modulus for maize stems}
+      \field{year}{2018}
+    \endentry
+    \entry{zhang_tensile_2016}{article}{}
+      \name{author}{4}{}{%
+        {{hash=9d75adb743a020b7fe5f6bce4b23a29e}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Lixian},
+           giveni={L\bibinitperiod}}}%
+        {{hash=e514f4a875866cae5df4011cd3a21101}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Zhongping},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=08c1e9a58399d68669c800dc1ee6607b}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Qiang},
+           giveni={Q\bibinitperiod}}}%
+        {{hash=ec8fdcc82f538b36c3e0bbfdc322dffc}{%
+           family={Guo},
+           familyi={G\bibinitperiod},
+           given={Hongli},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{782d344a3e6f07151d99ed252df6dc9c}
+      \strng{fullhash}{363f69d8fc99e4e2aae7af3078031153}
+      \strng{bibnamehash}{782d344a3e6f07151d99ed252df6dc9c}
+      \strng{authorbibnamehash}{782d344a3e6f07151d99ed252df6dc9c}
+      \strng{authornamehash}{782d344a3e6f07151d99ed252df6dc9c}
+      \strng{authorfullhash}{363f69d8fc99e4e2aae7af3078031153}
+      \field{extraname}{1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Tensile {Properties} of {Maize} {Stalk} {Rind}}
+      \field{year}{2016}
+    \endentry
+    \entry{zhang_mechanical_2017}{article}{}
+      \name{author}{5}{}{%
+        {{hash=9d75adb743a020b7fe5f6bce4b23a29e}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Lixian},
+           giveni={L\bibinitperiod}}}%
+        {{hash=e514f4a875866cae5df4011cd3a21101}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Zhongping},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=08c1e9a58399d68669c800dc1ee6607b}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Qiang},
+           giveni={Q\bibinitperiod}}}%
+        {{hash=06e2adccf2b497f204f777ec20e2824a}{%
+           family={Zhu},
+           familyi={Z\bibinitperiod},
+           given={Xinhua},
+           giveni={X\bibinitperiod}}}%
+        {{hash=d4190e9d7de72796de11a3494d2cbdec}{%
+           family={Hu},
+           familyi={H\bibinitperiod},
+           given={Haijun},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{782d344a3e6f07151d99ed252df6dc9c}
+      \strng{fullhash}{8bb4cd56e5f0b2c1b32bb56967b4812e}
+      \strng{bibnamehash}{782d344a3e6f07151d99ed252df6dc9c}
+      \strng{authorbibnamehash}{782d344a3e6f07151d99ed252df6dc9c}
+      \strng{authornamehash}{782d344a3e6f07151d99ed252df6dc9c}
+      \strng{authorfullhash}{8bb4cd56e5f0b2c1b32bb56967b4812e}
+      \field{extraname}{2}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Mechanical {Behavior} of {Corn} {Stalk} {Pith}: an {Experimental} and {Modeling} {Study}}
+      \field{year}{2017}
+    \endentry
+    \entry{sutherland_influence_2022}{article}{}
+      \name{author}{3}{}{%
+        {{hash=85dfecf5a066d82c9870d930f9c93e57}{%
+           family={Sutherland},
+           familyi={S\bibinitperiod},
+           given={Brandon},
+           giveni={B\bibinitperiod}}}%
+        {{hash=91a0082e86b0a6b2d27fa26b9bd38ac9}{%
+           family={Steele},
+           familyi={S\bibinitperiod},
+           given={Kirsten},
+           giveni={K\bibinitperiod}}}%
+        {{hash=8097b93c58317ae1852ab32cce2b1c92}{%
+           family={Cook},
+           familyi={C\bibinitperiod},
+           given={Douglas},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{a47aab787e4d83625a3bcf429c6e9d5f}
+      \strng{fullhash}{df34e0e8d72aebd01392efa1448b890b}
+      \strng{bibnamehash}{df34e0e8d72aebd01392efa1448b890b}
+      \strng{authorbibnamehash}{df34e0e8d72aebd01392efa1448b890b}
+      \strng{authornamehash}{a47aab787e4d83625a3bcf429c6e9d5f}
+      \strng{authorfullhash}{df34e0e8d72aebd01392efa1448b890b}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The {Influence} of {Water} {Content} on the {Longitudinal} {Modulus} of {Elasticity} of {Maize} {Stalk} {Tissues}}
+      \field{year}{2022}
+    \endentry
+    \entry{robertson_maize_2016}{article}{}
+      \name{author}{4}{}{%
+        {{hash=af00e1652441bd140bd6e1825dedbafa}{%
+           family={Robertson},
+           familyi={R\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+        {{hash=581e5e6b3cd2ee1c38c6b71a6091fbaa}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={Shien\bibnamedelima Yang},
+           giveni={S\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
+        {{hash=d07d628985c248c928c5442f8052aafd}{%
+           family={Julias},
+           familyi={J\bibinitperiod},
+           given={Margaret},
+           giveni={M\bibinitperiod}}}%
+        {{hash=b97457e5975e9d0432883a69c5c3d07c}{%
+           family={Cook},
+           familyi={C\bibinitperiod},
+           given={Douglas\bibnamedelima D},
+           giveni={D\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \strng{namehash}{8171186ce4d818baa0b04c30669c6c22}
+      \strng{fullhash}{fb2d8a39b16ec78c6a75fcb217c5bd5e}
+      \strng{bibnamehash}{8171186ce4d818baa0b04c30669c6c22}
+      \strng{authorbibnamehash}{8171186ce4d818baa0b04c30669c6c22}
+      \strng{authornamehash}{8171186ce4d818baa0b04c30669c6c22}
+      \strng{authorfullhash}{fb2d8a39b16ec78c6a75fcb217c5bd5e}
+      \field{extraname}{3}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Crop Science}
+      \field{title}{Maize {Stalk} {Lodging}: {Flexural} {Stiffness} {Predicts} {Strength}}
+      \field{year}{2016}
+    \endentry
+    \entry{ottesen_development_2023-1}{article}{}
+      \name{author}{5}{}{%
+        {{hash=279ecda7e76ebe58c7cfaf65d2da2a27}{%
+           family={Ottesen},
+           familyi={O\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+        {{hash=45b1f7c5e33c6a8fc2a634d2f80c3686}{%
+           family={Carter},
+           familyi={C\bibinitperiod},
+           given={Joseph},
+           giveni={J\bibinitperiod}}}%
+        {{hash=125347ebc062548b09b0050f9e69f23b}{%
+           family={Hall},
+           familyi={H\bibinitperiod},
+           given={Ryan},
+           giveni={R\bibinitperiod}}}%
+        {{hash=78587725baa54d93aaff22d3ffe54e42}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Nan-Wei},
+           giveni={N\bibinithyphendelim W\bibinitperiod}}}%
+        {{hash=b97457e5975e9d0432883a69c5c3d07c}{%
+           family={Cook},
+           familyi={C\bibinitperiod},
+           given={Douglas\bibnamedelima D},
+           giveni={D\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \strng{namehash}{b765247ef07556f5b523a3fb7779fb34}
+      \strng{fullhash}{de80ded650c3863b7bf5fe65d431ef27}
+      \strng{bibnamehash}{b765247ef07556f5b523a3fb7779fb34}
+      \strng{authorbibnamehash}{b765247ef07556f5b523a3fb7779fb34}
+      \strng{authornamehash}{b765247ef07556f5b523a3fb7779fb34}
+      \strng{authorfullhash}{de80ded650c3863b7bf5fe65d431ef27}
+      \field{extraname}{3}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{in silico Plants}
+      \field{number}{2}
+      \field{title}{Development and stochastic validation of a parameterized model of maize stalk flexure and buckling}
+      \field{volume}{5}
+      \field{year}{2023}
+    \endentry
+    \entry{al-zube_measuring_2017}{article}{}
+      \name{author}{5}{}{%
+        {{hash=e6eea231de38cfd9874861ef8f4ca5c5}{%
+           family={Al-Zube},
+           familyi={A\bibinithyphendelim Z\bibinitperiod},
+           given={Loay},
+           giveni={L\bibinitperiod}}}%
+        {{hash=af00e1652441bd140bd6e1825dedbafa}{%
+           family={Robertson},
+           familyi={R\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+        {{hash=47a7de44b5f1fa4850779515f50420c7}{%
+           family={Edwards},
+           familyi={E\bibinitperiod},
+           given={Jean},
+           giveni={J\bibinitperiod}}}%
+        {{hash=9aafed7ba75aa754d9025cf5352df107}{%
+           family={Sun},
+           familyi={S\bibinitperiod},
+           given={Wenhuan},
+           giveni={W\bibinitperiod}}}%
+        {{hash=8097b93c58317ae1852ab32cce2b1c92}{%
+           family={Cook},
+           familyi={C\bibinitperiod},
+           given={Douglas},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{d14c24b06a78f49d4ab2b03f49c2b500}
+      \strng{fullhash}{e89a583e5dba7c6e2bc3a12569691b1b}
+      \strng{bibnamehash}{d14c24b06a78f49d4ab2b03f49c2b500}
+      \strng{authorbibnamehash}{d14c24b06a78f49d4ab2b03f49c2b500}
+      \strng{authornamehash}{d14c24b06a78f49d4ab2b03f49c2b500}
+      \strng{authorfullhash}{e89a583e5dba7c6e2bc3a12569691b1b}
+      \field{extraname}{2}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Plant Methods}
+      \field{title}{Measuring the compressive modulus of elasticity of pith-filled plant stems}
+      \field{year}{2017}
+    \endentry
+    \entry{blokdyk_procedural_2020}{book}{}
+      \name{author}{1}{}{%
+        {{hash=e2d3c80a76e261de27192ae64da6aba8}{%
+           family={Blokdyk},
+           familyi={B\bibinitperiod},
+           given={Gerardus},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{e2d3c80a76e261de27192ae64da6aba8}
+      \strng{fullhash}{e2d3c80a76e261de27192ae64da6aba8}
+      \strng{bibnamehash}{e2d3c80a76e261de27192ae64da6aba8}
+      \strng{authorbibnamehash}{e2d3c80a76e261de27192ae64da6aba8}
+      \strng{authornamehash}{e2d3c80a76e261de27192ae64da6aba8}
+      \strng{authorfullhash}{e2d3c80a76e261de27192ae64da6aba8}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Procedural {Programming} {A} {Complete} {Guide}}
+      \field{year}{2020}
+    \endentry
+    \entry{green_wood_1999}{book}{}
+      \name{author}{3}{}{%
+        {{hash=ba12aadfa08c774bacb9d91259dce803}{%
+           family={Green},
+           familyi={G\bibinitperiod},
+           given={D},
+           giveni={D\bibinitperiod}}}%
+        {{hash=567583a742cc17e867f9b3f2179f038a}{%
+           family={Winandy},
+           familyi={W\bibinitperiod},
+           given={J},
+           giveni={J\bibinitperiod}}}%
+        {{hash=fae4fc94cdb798c881a61add1db1312f}{%
+           family={Kretschmann},
+           familyi={K\bibinitperiod},
+           given={D},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{728653d3d1646c8d10b6a4f5e91dfdcc}
+      \strng{fullhash}{f6770ac80d47fb560e1aecfc38d96331}
+      \strng{bibnamehash}{f6770ac80d47fb560e1aecfc38d96331}
+      \strng{authorbibnamehash}{f6770ac80d47fb560e1aecfc38d96331}
+      \strng{authornamehash}{728653d3d1646c8d10b6a4f5e91dfdcc}
+      \strng{authorfullhash}{f6770ac80d47fb560e1aecfc38d96331}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Wood {Handbook}: wood as an engineering material}
+      \field{year}{1999}
+    \endentry
+    \entry{benzley_comparison_1995}{article}{}
+      \name{author}{5}{}{%
+        {{hash=00e566fcb2a9117ce79b8c89da9395cc}{%
+           family={Benzley},
+           familyi={B\bibinitperiod},
+           given={Steven\bibnamedelima E},
+           giveni={S\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=ba2ee6e7a49075ec8c3e7420c361271c}{%
+           family={Perry},
+           familyi={P\bibinitperiod},
+           given={Ernest},
+           giveni={E\bibinitperiod}}}%
+        {{hash=7870e133f43ccf375fae64bfa28f702d}{%
+           family={Merkley},
+           familyi={M\bibinitperiod},
+           given={Karl},
+           giveni={K\bibinitperiod}}}%
+        {{hash=79c3238289d29fa489cb55da7489969e}{%
+           family={Clark},
+           familyi={C\bibinitperiod},
+           given={Brett},
+           giveni={B\bibinitperiod}}}%
+        {{hash=8e107caeefee20ab816113732e245ec7}{%
+           family={Sjaardama},
+           familyi={S\bibinitperiod},
+           given={Greg},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{06d7690017292462547ea5c3adb6fbdc}
+      \strng{fullhash}{fd664b390fb6e3baf669556e46df20b1}
+      \strng{bibnamehash}{06d7690017292462547ea5c3adb6fbdc}
+      \strng{authorbibnamehash}{06d7690017292462547ea5c3adb6fbdc}
+      \strng{authornamehash}{06d7690017292462547ea5c3adb6fbdc}
+      \strng{authorfullhash}{fd664b390fb6e3baf669556e46df20b1}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{4th international meshing roundtable}
+      \field{title}{A {Comparison} of {All} {Hexagonal} and {All} {Tetrahedral} {Finite} {Element} {Meshes} for {Elastic} and {Elasto}-plastic {Analysis}}
+      \field{year}{1995}
+    \endentry
+    \entry{hughes_finite_1987}{book}{}
+      \name{author}{1}{}{%
+        {{hash=50c8dec26f5cfba91c3a36075c1967c6}{%
+           family={Hughes},
+           familyi={H\bibinitperiod},
+           given={Thomas\bibnamedelimb J.\bibnamedelimi R.},
+           giveni={T\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \strng{namehash}{50c8dec26f5cfba91c3a36075c1967c6}
+      \strng{fullhash}{50c8dec26f5cfba91c3a36075c1967c6}
+      \strng{bibnamehash}{50c8dec26f5cfba91c3a36075c1967c6}
+      \strng{authorbibnamehash}{50c8dec26f5cfba91c3a36075c1967c6}
+      \strng{authornamehash}{50c8dec26f5cfba91c3a36075c1967c6}
+      \strng{authorfullhash}{50c8dec26f5cfba91c3a36075c1967c6}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The {Finite} {Element} {Method}}
+      \field{year}{1987}
+    \endentry
+    \entry{hitchings_nafems_2007}{book}{}
+      \name{author}{2}{}{%
+        {{hash=e539d9a56a682a97d56a155a26bad481}{%
+           family={Hitchings},
+           familyi={H\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=9aaad2639f7efbea800d315e6523e05c}{%
+           family={Falzon},
+           familyi={F\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{674e23cd8ed0053b1d22fde9587c9f3e}
+      \strng{fullhash}{747d12b9c3db9e375b4c6e47a503246d}
+      \strng{bibnamehash}{747d12b9c3db9e375b4c6e47a503246d}
+      \strng{authorbibnamehash}{747d12b9c3db9e375b4c6e47a503246d}
+      \strng{authornamehash}{674e23cd8ed0053b1d22fde9587c9f3e}
+      \strng{authorfullhash}{747d12b9c3db9e375b4c6e47a503246d}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{NAFEMS}: {An} {Introduction} to {Modeling} {Buckling} and {Collapse}}
+      \field{year}{2007}
+    \endentry
+    \entry{carter_measurement_2023}{article}{}
+      \name{author}{5}{}{%
+        {{hash=45b1f7c5e33c6a8fc2a634d2f80c3686}{%
+           family={Carter},
+           familyi={C\bibinitperiod},
+           given={Joseph},
+           giveni={J\bibinitperiod}}}%
+        {{hash=434991063afae91b319ced251b60783c}{%
+           family={Hoffman},
+           familyi={H\bibinitperiod},
+           given={Joshua},
+           giveni={J\bibinitperiod}}}%
+        {{hash=108512b9793a25ae930bd599cd9d73a2}{%
+           family={Fjeldsted},
+           familyi={F\bibinitperiod},
+           given={Braxton},
+           giveni={B\bibinitperiod}}}%
+        {{hash=23176681ddd552f6417da92cbc025442}{%
+           family={Ogilvie},
+           familyi={O\bibinitperiod},
+           given={Grant},
+           giveni={G\bibinitperiod}}}%
+        {{hash=b97457e5975e9d0432883a69c5c3d07c}{%
+           family={Cook},
+           familyi={C\bibinitperiod},
+           given={Douglas\bibnamedelima D},
+           giveni={D\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \strng{namehash}{184603b8647991184f66f174fa94cc80}
+      \strng{fullhash}{571a73ad4e2acab1f138eae49c69e0dc}
+      \strng{bibnamehash}{184603b8647991184f66f174fa94cc80}
+      \strng{authorbibnamehash}{184603b8647991184f66f174fa94cc80}
+      \strng{authornamehash}{184603b8647991184f66f174fa94cc80}
+      \strng{authorfullhash}{571a73ad4e2acab1f138eae49c69e0dc}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Plant Methods}
+      \field{title}{Measurement of {Maize} {Stalk} {Shear} {Moduli}}
+      \field{year}{2023}
+    \endentry
+    \entry{boresi_advanced_2002}{book}{}
+      \name{author}{2}{}{%
+        {{hash=d9d1a56a7d2e04e82bfafe725c39f135}{%
+           family={Boresi},
+           familyi={B\bibinitperiod},
+           given={Arthur},
+           giveni={A\bibinitperiod}}}%
+        {{hash=cd7c519acadcb301432b0bdcaf1c1055}{%
+           family={Schmidt},
+           familyi={S\bibinitperiod},
+           given={Richard},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{1a9c52ed92d79c49660bc754539dc110}
+      \strng{fullhash}{289ab5cfae800aa84b0426d029b2aa8d}
+      \strng{bibnamehash}{289ab5cfae800aa84b0426d029b2aa8d}
+      \strng{authorbibnamehash}{289ab5cfae800aa84b0426d029b2aa8d}
+      \strng{authornamehash}{1a9c52ed92d79c49660bc754539dc110}
+      \strng{authorfullhash}{289ab5cfae800aa84b0426d029b2aa8d}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{6}
+      \field{title}{Advanced {Mechanics} of {Materials}}
+      \field{year}{2002}
+    \endentry
+    \entry{stubbs_measuring_2019}{article}{}
+      \name{author}{3}{}{%
+        {{hash=ef8b5a1b6332cd93b63e34607eeb08aa}{%
+           family={Stubbs},
+           familyi={S\bibinitperiod},
+           given={Christopher},
+           giveni={C\bibinitperiod}}}%
+        {{hash=9aafed7ba75aa754d9025cf5352df107}{%
+           family={Sun},
+           familyi={S\bibinitperiod},
+           given={Wenhuan},
+           giveni={W\bibinitperiod}}}%
+        {{hash=8097b93c58317ae1852ab32cce2b1c92}{%
+           family={Cook},
+           familyi={C\bibinitperiod},
+           given={Douglas},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{b134551d49795e37d57a07e016f06c85}
+      \strng{fullhash}{34e53403b31b60be28a41f9a75c91c1b}
+      \strng{bibnamehash}{34e53403b31b60be28a41f9a75c91c1b}
+      \strng{authorbibnamehash}{34e53403b31b60be28a41f9a75c91c1b}
+      \strng{authornamehash}{b134551d49795e37d57a07e016f06c85}
+      \strng{authorfullhash}{34e53403b31b60be28a41f9a75c91c1b}
+      \field{extraname}{2}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Biomechanics}
+      \field{title}{Measuring the transverse {Young}’s modulus of maize rind and pith tissues}
+      \field{volume}{84}
+      \field{year}{2019}
+      \field{pages}{113\bibrangedash 120}
+      \range{pages}{8}
+    \endentry
+    \entry{robertson_measuring_2015}{article}{}
+      \name{author}{3}{}{%
+        {{hash=af00e1652441bd140bd6e1825dedbafa}{%
+           family={Robertson},
+           familyi={R\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+        {{hash=fc98196d8e93ca40c4f507024aefd07f}{%
+           family={Smith},
+           familyi={S\bibinitperiod},
+           given={Simeon},
+           giveni={S\bibinitperiod}}}%
+        {{hash=b97457e5975e9d0432883a69c5c3d07c}{%
+           family={Cook},
+           familyi={C\bibinitperiod},
+           given={Douglas\bibnamedelima D},
+           giveni={D\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \strng{namehash}{8171186ce4d818baa0b04c30669c6c22}
+      \strng{fullhash}{7cd40acd1e8bab756e66221e261cedb0}
+      \strng{bibnamehash}{7cd40acd1e8bab756e66221e261cedb0}
+      \strng{authorbibnamehash}{7cd40acd1e8bab756e66221e261cedb0}
+      \strng{authornamehash}{8171186ce4d818baa0b04c30669c6c22}
+      \strng{authorfullhash}{7cd40acd1e8bab756e66221e261cedb0}
+      \field{extraname}{4}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{American Journal of Botany}
+      \field{title}{On {Measuring} the {Bending} {Strength} {Of} {Septate} {Grass} {Stems}}
+      \field{year}{2015}
+    \endentry
+    \entry{stubbs_mapping_2020}{article}{}
+      \name{author}{3}{}{%
+        {{hash=ef8b5a1b6332cd93b63e34607eeb08aa}{%
+           family={Stubbs},
+           familyi={S\bibinitperiod},
+           given={Christopher},
+           giveni={C\bibinitperiod}}}%
+        {{hash=74963a757c6e28ea5ac70e1a07c93ba2}{%
+           family={Larson},
+           familyi={L\bibinitperiod},
+           given={Ryan},
+           giveni={R\bibinitperiod}}}%
+        {{hash=b97457e5975e9d0432883a69c5c3d07c}{%
+           family={Cook},
+           familyi={C\bibinitperiod},
+           given={Douglas\bibnamedelima D},
+           giveni={D\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \strng{namehash}{b134551d49795e37d57a07e016f06c85}
+      \strng{fullhash}{3eae740e85a3fbdff30b43a928515873}
+      \strng{bibnamehash}{3eae740e85a3fbdff30b43a928515873}
+      \strng{authorbibnamehash}{3eae740e85a3fbdff30b43a928515873}
+      \strng{authornamehash}{b134551d49795e37d57a07e016f06c85}
+      \strng{authorfullhash}{3eae740e85a3fbdff30b43a928515873}
+      \field{extraname}{3}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Biosystems Engineering}
+      \field{title}{Mapping spatially distributed material properties in finite element models of plant tissue using computed tomography}
+      \field{year}{2020}
+    \endentry
+    \entry{noauthor_astm_nodate}{misc}{}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labeltitlesource}{title}
+      \field{title}{{ASTM} {E143}-20: {Standard} {Test} {Method} for {Shear} {Modulus} at {Room} {Temperature}}
+    \endentry
+    \entry{revelo_development_2022}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{hash=e76a2a23bd61045d4d01194166f56b1f}{%
+           family={Revelo},
+           familyi={R\bibinitperiod},
+           given={Daniel\bibnamedelima Chacón},
+           giveni={D\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=83364b43ec8515266878094a7fb53738}{%
+           family={Papadopoulos},
+           familyi={P\bibinitperiod},
+           given={Christopher},
+           giveni={C\bibinitperiod}}}%
+        {{hash=1fd63dfece42d4c7b64c51ac5110bd70}{%
+           family={Costa},
+           familyi={C\bibinitperiod},
+           given={Felipe\bibnamedelima Acosta},
+           giveni={F\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=38112943ae382ac18114ad0d54bc0e11}{%
+           family={Harries},
+           familyi={H\bibinitperiod},
+           given={Kent\bibnamedelima A},
+           giveni={K\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=0e51f1a8f08644a5d18c712560fa4062}{%
+           family={Saffar},
+           familyi={S\bibinitperiod},
+           given={Ali},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{b8438bf4cec1ab243c617d32241ec156}
+      \strng{fullhash}{46ed8af76fce6288ce69e655e174d585}
+      \strng{bibnamehash}{b8438bf4cec1ab243c617d32241ec156}
+      \strng{authorbibnamehash}{b8438bf4cec1ab243c617d32241ec156}
+      \strng{authornamehash}{b8438bf4cec1ab243c617d32241ec156}
+      \strng{authorfullhash}{46ed8af76fce6288ce69e655e174d585}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Development of a {Method} to {Test} {Bamboo} {Culms} in {Direct} {Torsion}}
+      \field{year}{2022}
+    \endentry
+    \entry{askarinejad_effects_2015}{article}{}
+      \name{author}{3}{}{%
+        {{hash=4dde7714e143ca5c376316a9e82600ac}{%
+           family={Askarinejad},
+           familyi={A\bibinitperiod},
+           given={Sina},
+           giveni={S\bibinitperiod}}}%
+        {{hash=f170ad260ac7769de879910e0f62ee67}{%
+           family={Kotowski},
+           familyi={K\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod}}}%
+        {{hash=109c9c24063df606416991de5985b08a}{%
+           family={Rahbar},
+           familyi={R\bibinitperiod},
+           given={Nima},
+           giveni={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{e6cc60961e30afc07577d2182a78479b}
+      \strng{fullhash}{d9869945ab0fcc49d62664bfbd18b552}
+      \strng{bibnamehash}{d9869945ab0fcc49d62664bfbd18b552}
+      \strng{authorbibnamehash}{d9869945ab0fcc49d62664bfbd18b552}
+      \strng{authornamehash}{e6cc60961e30afc07577d2182a78479b}
+      \strng{authorfullhash}{d9869945ab0fcc49d62664bfbd18b552}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Effects of humidity on shear behavior of bamboo}
+      \field{year}{2015}
+    \endentry
+    \entry{moran_new_2017}{article}{}
+      \name{author}{3}{}{%
+        {{hash=9292bfa24efca32c3cf4342116768587}{%
+           family={Moran},
+           familyi={M\bibinitperiod},
+           given={Richard},
+           giveni={R\bibinitperiod}}}%
+        {{hash=e5911fa4608b81b44491aa3d5e13300d}{%
+           family={Ghavami},
+           familyi={G\bibinitperiod},
+           given={Khosrow},
+           giveni={K\bibinitperiod}}}%
+        {{hash=f39ab4a5e619366ef6f2781eb91e4ac5}{%
+           family={García},
+           familyi={G\bibinitperiod},
+           given={José},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{37f7da68511335cf3beb8002fb630ea3}
+      \strng{fullhash}{b56185aeb9a29954be79499ee31b74b6}
+      \strng{bibnamehash}{b56185aeb9a29954be79499ee31b74b6}
+      \strng{authorbibnamehash}{b56185aeb9a29954be79499ee31b74b6}
+      \strng{authornamehash}{37f7da68511335cf3beb8002fb630ea3}
+      \strng{authorfullhash}{b56185aeb9a29954be79499ee31b74b6}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{A new method to measure the axial and shear moduli of bamboo}
+      \field{year}{2017}
+    \endentry
+    \entry{brabec_utilization_2016}{article}{}
+      \name{author}{5}{}{%
+        {{hash=7f72ca32631c4df39c266f352d26a2b0}{%
+           family={Brabec},
+           familyi={B\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod}}}%
+        {{hash=9cf4710fcf5377ddde8e9c8bcc547db8}{%
+           family={Lagana},
+           familyi={L\bibinitperiod},
+           given={Rastislav},
+           giveni={R\bibinitperiod}}}%
+        {{hash=07547910fd6943e9edc9c447cb9f3a32}{%
+           family={Milch},
+           familyi={M\bibinitperiod},
+           given={Jaromir},
+           giveni={J\bibinitperiod}}}%
+        {{hash=24170880771595cabeb40bda3a9f739f}{%
+           family={Tippner},
+           familyi={T\bibinitperiod},
+           given={Jan},
+           giveni={J\bibinitperiod}}}%
+        {{hash=5632842196f21d76988da03a658e15b7}{%
+           family={Sebera},
+           familyi={S\bibinitperiod},
+           given={Vaclav},
+           giveni={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{5b99a894b0dd8f2d116c95de1624c7b7}
+      \strng{fullhash}{484fdbfb9190f20fb2c05c50ae446908}
+      \strng{bibnamehash}{5b99a894b0dd8f2d116c95de1624c7b7}
+      \strng{authorbibnamehash}{5b99a894b0dd8f2d116c95de1624c7b7}
+      \strng{authornamehash}{5b99a894b0dd8f2d116c95de1624c7b7}
+      \strng{authorfullhash}{484fdbfb9190f20fb2c05c50ae446908}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Wood Science and Technology}
+      \field{title}{Utilization of digital image correlation in determining of both longitudinal shear moduli of wood at single torsion test}
+      \field{volume}{51}
+      \field{year}{2016}
+      \field{pages}{29\bibrangedash 45}
+      \range{pages}{17}
+    \endentry
+    \entry{budynas_roarks_2020}{book}{}
+      \name{author}{2}{}{%
+        {{hash=f1dc090de8fafad195afe9fd9177992a}{%
+           family={Budynas},
+           familyi={B\bibinitperiod},
+           given={Richard},
+           giveni={R\bibinitperiod}}}%
+        {{hash=9f0aa21cb2245221cb08107292c694e2}{%
+           family={Sadegh},
+           familyi={S\bibinitperiod},
+           given={Ali},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {English}%
+      }
+      \list{publisher}{1}{%
+        {McGraw Hill}%
+      }
+      \strng{namehash}{0987358952499867a51c78cc147ba4b9}
+      \strng{fullhash}{a58798df48480dbf5c4a42431fb8542a}
+      \strng{bibnamehash}{a58798df48480dbf5c4a42431fb8542a}
+      \strng{authorbibnamehash}{a58798df48480dbf5c4a42431fb8542a}
+      \strng{authornamehash}{0987358952499867a51c78cc147ba4b9}
+      \strng{authorfullhash}{a58798df48480dbf5c4a42431fb8542a}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{9}
+      \field{isbn}{978-1-260-45375-1}
+      \field{title}{Roark's {Formulas} for {Stress} and {Strain}}
+      \field{year}{2020}
+    \endentry
+    \entry{popov_mechanics_2015}{book}{}
+      \name{author}{3}{}{%
+        {{hash=df616170121dc9b96fe1c7a31d8a0878}{%
+           family={Popov},
+           familyi={P\bibinitperiod},
+           given={E.\bibnamedelimi P.},
+           giveni={E\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=db2c101e2f7992bb36ebe880cf53e3a8}{%
+           family={Nagarajan},
+           familyi={N\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+        {{hash=425b4da70f8c27621e411f54bd84710d}{%
+           family={Lu},
+           familyi={L\bibinitperiod},
+           given={Z.\bibnamedelimi A.},
+           giveni={Z\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \strng{namehash}{7bf647b292e34fb5c441b681c822c7ab}
+      \strng{fullhash}{3779d4d3e6893f5f1189cd09d443669f}
+      \strng{bibnamehash}{3779d4d3e6893f5f1189cd09d443669f}
+      \strng{authorbibnamehash}{3779d4d3e6893f5f1189cd09d443669f}
+      \strng{authornamehash}{7bf647b292e34fb5c441b681c822c7ab}
+      \strng{authorfullhash}{3779d4d3e6893f5f1189cd09d443669f}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{2}
+      \field{title}{Mechanics of {Materials}}
+      \field{year}{2015}
+    \endentry
+    \entry{nelson_measurement_2019}{article}{}
+      \name{author}{4}{}{%
+        {{hash=54601badf1b2b8bdb83d86ade5e35157}{%
+           family={Nelson},
+           familyi={N\bibinitperiod},
+           given={Nathanael},
+           giveni={N\bibinitperiod}}}%
+        {{hash=ef8b5a1b6332cd93b63e34607eeb08aa}{%
+           family={Stubbs},
+           familyi={S\bibinitperiod},
+           given={Christopher},
+           giveni={C\bibinitperiod}}}%
+        {{hash=74963a757c6e28ea5ac70e1a07c93ba2}{%
+           family={Larson},
+           familyi={L\bibinitperiod},
+           given={Ryan},
+           giveni={R\bibinitperiod}}}%
+        {{hash=b97457e5975e9d0432883a69c5c3d07c}{%
+           family={Cook},
+           familyi={C\bibinitperiod},
+           given={Douglas\bibnamedelima D},
+           giveni={D\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \strng{namehash}{832790633b0ed13a3327e7af18c14694}
+      \strng{fullhash}{ef577f327d9228ec03d86a1537e5ccb0}
+      \strng{bibnamehash}{832790633b0ed13a3327e7af18c14694}
+      \strng{authorbibnamehash}{832790633b0ed13a3327e7af18c14694}
+      \strng{authornamehash}{832790633b0ed13a3327e7af18c14694}
+      \strng{authorfullhash}{ef577f327d9228ec03d86a1537e5ccb0}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Experimental Botany}
+      \field{title}{Measurement accuracy and uncertainty in plant biomechanics.}
+      \field{year}{2019}
+    \endentry
+    \entry{coleman_experimentation_2009}{book}{}
+      \name{author}{2}{}{%
+        {{hash=22d1ccefda016607d6b3df9e01b52777}{%
+           family={Coleman},
+           familyi={C\bibinitperiod},
+           given={Hugh},
+           giveni={H\bibinitperiod}}}%
+        {{hash=759a69c4217df25fcfa852394bc1cb5a}{%
+           family={Steele},
+           familyi={S\bibinitperiod},
+           given={Glenn},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{bd6430d3523ca64e7ff74cd999503d82}
+      \strng{fullhash}{4a0486a0955657013fbde0641a6ee364}
+      \strng{bibnamehash}{4a0486a0955657013fbde0641a6ee364}
+      \strng{authorbibnamehash}{4a0486a0955657013fbde0641a6ee364}
+      \strng{authornamehash}{bd6430d3523ca64e7ff74cd999503d82}
+      \strng{authorfullhash}{4a0486a0955657013fbde0641a6ee364}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Experimentation, {Validation}, and {Uncertainty} {Analysis} for {Engineers}}
+      \field{year}{2009}
+    \endentry
+    \entry{zabler_moisture_2010}{article}{}
+      \name{author}{4}{}{%
+        {{hash=a715353d07338f2af49a8bb721c405cc}{%
+           family={Zabler},
+           familyi={Z\bibinitperiod},
+           given={S},
+           giveni={S\bibinitperiod}}}%
+        {{hash=39cfac86b10d14e422814380d3d12185}{%
+           family={Paris},
+           familyi={P\bibinitperiod},
+           given={O},
+           giveni={O\bibinitperiod}}}%
+        {{hash=23c634a2eed343ae511fcdaaf17e4c06}{%
+           family={Burgert},
+           familyi={B\bibinitperiod},
+           given={I},
+           giveni={I\bibinitperiod}}}%
+        {{hash=9522bbe78f2fb800cf56884f0723045e}{%
+           family={Fratzl},
+           familyi={F\bibinitperiod},
+           given={P},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{4cfda04fba5d8220a5d0637dc06cb783}
+      \strng{fullhash}{570389abd01221d8765e5dd69945f26a}
+      \strng{bibnamehash}{4cfda04fba5d8220a5d0637dc06cb783}
+      \strng{authorbibnamehash}{4cfda04fba5d8220a5d0637dc06cb783}
+      \strng{authornamehash}{4cfda04fba5d8220a5d0637dc06cb783}
+      \strng{authorfullhash}{570389abd01221d8765e5dd69945f26a}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Structural Biology}
+      \field{title}{Moisture changes in the plant cell wall force cellulose crystallites to deform}
+      \field{volume}{171}
+      \field{year}{2010}
+      \field{pages}{133\bibrangedash 141}
+      \range{pages}{9}
+    \endentry
+    \entry{rowell_chemistry_1984}{book}{}
+      \name{author}{2}{}{%
+        {{hash=379c72a5e985033f54623e097d71e053}{%
+           family={Rowell},
+           familyi={R\bibinitperiod},
+           given={Roger},
+           giveni={R\bibinitperiod}}}%
+        {{hash=5ea34af90ff60c84e3e5c3b382108305}{%
+           family={Skaar},
+           familyi={S\bibinitperiod},
+           given={C},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{aa068fadadcddeef30ce798faa890959}
+      \strng{fullhash}{3c42a176109831501440c6eaea3a1761}
+      \strng{bibnamehash}{3c42a176109831501440c6eaea3a1761}
+      \strng{authorbibnamehash}{3c42a176109831501440c6eaea3a1761}
+      \strng{authornamehash}{aa068fadadcddeef30ce798faa890959}
+      \strng{authorfullhash}{3c42a176109831501440c6eaea3a1761}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The {Chemistry} of {Solid} {Wood}; {Advances} in {Chemistry}}
+      \field{year}{1984}
+    \endentry
+    \entry{oduntan_effect_2024}{article}{}
+      \name{author}{7}{}{%
+        {{hash=4e3bd24e88ef12dc8ce18cc753655c24}{%
+           family={Oduntan},
+           familyi={O\bibinitperiod},
+           given={Y},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=bbfec0316cbb029922df7138695e2960}{%
+           family={Kunduru},
+           familyi={K\bibinitperiod},
+           given={B},
+           giveni={B\bibinitperiod}}}%
+        {{hash=63d3fac7456f62623577f582ea77daaf}{%
+           family={Tabaracci},
+           familyi={T\bibinitperiod},
+           given={K},
+           giveni={K\bibinitperiod}}}%
+        {{hash=b56762563f6b40fcdedf8f6e8a2c55df}{%
+           family={Mengistie},
+           familyi={M\bibinitperiod},
+           given={E},
+           giveni={E\bibinitperiod}}}%
+        {{hash=a610abe50f03e62194525dcc6acb71bb}{%
+           family={McDonald},
+           familyi={M\bibinitperiod},
+           given={A\bibnamedelima G},
+           giveni={A\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=e1910a013b7bfb1f57d5f3e579787294}{%
+           family={Sekhon},
+           familyi={S\bibinitperiod},
+           given={R\bibnamedelima S},
+           giveni={R\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=af00e1652441bd140bd6e1825dedbafa}{%
+           family={Robertson},
+           familyi={R\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{ced3f0d7fa6a250e4e308a0e018b5f50}
+      \strng{fullhash}{eda4c23cb7765f7bc8e5d821be1f4754}
+      \strng{bibnamehash}{ced3f0d7fa6a250e4e308a0e018b5f50}
+      \strng{authorbibnamehash}{ced3f0d7fa6a250e4e308a0e018b5f50}
+      \strng{authornamehash}{ced3f0d7fa6a250e4e308a0e018b5f50}
+      \strng{authorfullhash}{eda4c23cb7765f7bc8e5d821be1f4754}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{European Journal of Agronomy}
+      \field{title}{The effect of structural bending properties versus material bending properties on maize stalk lodging.}
+      \field{volume}{159}
+      \field{year}{2024}
+    \endentry
+    \entry{martin-nelson_axial_2021}{article}{}
+      \name{author}{6}{}{%
+        {{hash=9d2666ce6118b0e72704b193c87edb32}{%
+           family={Martin-Nelson},
+           familyi={M\bibinithyphendelim N\bibinitperiod},
+           given={N},
+           giveni={N\bibinitperiod}}}%
+        {{hash=85dfecf5a066d82c9870d930f9c93e57}{%
+           family={Sutherland},
+           familyi={S\bibinitperiod},
+           given={Brandon},
+           giveni={B\bibinitperiod}}}%
+        {{hash=ca03b9e851170ba5d5f189620ece8186}{%
+           family={Yancey},
+           familyi={Y\bibinitperiod},
+           given={M},
+           giveni={M\bibinitperiod}}}%
+        {{hash=27b23ca627fd79713b8a593a335b5049}{%
+           family={Liao},
+           familyi={L\bibinitperiod},
+           given={C\bibnamedelima S},
+           giveni={C\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=ef8b5a1b6332cd93b63e34607eeb08aa}{%
+           family={Stubbs},
+           familyi={S\bibinitperiod},
+           given={Christopher},
+           giveni={C\bibinitperiod}}}%
+        {{hash=b97457e5975e9d0432883a69c5c3d07c}{%
+           family={Cook},
+           familyi={C\bibinitperiod},
+           given={Douglas\bibnamedelima D},
+           giveni={D\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \strng{namehash}{8c6c4bea417298c5fd3ac70730f68f63}
+      \strng{fullhash}{c3a7b619b53f2fabb5b876ef7d38ea89}
+      \strng{bibnamehash}{8c6c4bea417298c5fd3ac70730f68f63}
+      \strng{authorbibnamehash}{8c6c4bea417298c5fd3ac70730f68f63}
+      \strng{authornamehash}{8c6c4bea417298c5fd3ac70730f68f63}
+      \strng{authorfullhash}{c3a7b619b53f2fabb5b876ef7d38ea89}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Plant Methods}
+      \field{title}{Axial variation in flexural stiffness of plant stem segments: measurement methods and the influence of measurement uncertainty}
+      \field{volume}{17}
+      \field{year}{2021}
+    \endentry
+    \entry{hale_assessing_2023}{article}{}
+      \name{author}{4}{}{%
+        {{hash=22194352d5fe8b99e74ee485edd9cfb3}{%
+           family={Hale},
+           familyi={H\bibinitperiod},
+           given={J},
+           giveni={J\bibinitperiod}}}%
+        {{hash=97cc533bf932dde2139a58b8d750f552}{%
+           family={Webb},
+           familyi={W\bibinitperiod},
+           given={S},
+           giveni={S\bibinitperiod}}}%
+        {{hash=b09557013451efd674820d777629ca0e}{%
+           family={Stubbs},
+           familyi={S\bibinitperiod},
+           given={C},
+           giveni={C\bibinitperiod}}}%
+        {{hash=b97457e5975e9d0432883a69c5c3d07c}{%
+           family={Cook},
+           familyi={C\bibinitperiod},
+           given={Douglas\bibnamedelima D},
+           giveni={D\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \strng{namehash}{845121e64981cefb0796cc8ff0493475}
+      \strng{fullhash}{02315d59f28550ec05056ae6b723b3bf}
+      \strng{bibnamehash}{845121e64981cefb0796cc8ff0493475}
+      \strng{authorbibnamehash}{845121e64981cefb0796cc8ff0493475}
+      \strng{authornamehash}{845121e64981cefb0796cc8ff0493475}
+      \strng{authorfullhash}{02315d59f28550ec05056ae6b723b3bf}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Crop Science}
+      \field{number}{2}
+      \field{title}{Assessing axial and temporal effects of the leaf sheath on the flexural stiffness of large‐grain stems.}
+      \field{volume}{63}
+      \field{year}{2023}
+      \field{pages}{822\bibrangedash 832}
+      \range{pages}{11}
+    \endentry
+    \entry{saltelli_sensitivity_2009}{book}{}
+      \name{author}{3}{}{%
+        {{hash=0b973422ac7bddd74b25c73c9675b990}{%
+           family={Saltelli},
+           familyi={S\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=bb62ccab7499ec096dbc3157e410601a}{%
+           family={Chan},
+           familyi={C\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+        {{hash=1ba2b694d8c66927fc9497fd8cd5df87}{%
+           family={Scott},
+           familyi={S\bibinitperiod},
+           given={E.\bibnamedelimi M.},
+           giveni={E\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley}%
+      }
+      \strng{namehash}{3a61c9943ff4b479b699d8561f8acb99}
+      \strng{fullhash}{f844e4c820222ea55e8d37f47a5166f8}
+      \strng{bibnamehash}{f844e4c820222ea55e8d37f47a5166f8}
+      \strng{authorbibnamehash}{f844e4c820222ea55e8d37f47a5166f8}
+      \strng{authornamehash}{3a61c9943ff4b479b699d8561f8acb99}
+      \strng{authorfullhash}{f844e4c820222ea55e8d37f47a5166f8}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{1}
+      \field{title}{Sensitivity {Analysis}}
+      \field{year}{2009}
+    \endentry
+    \entry{hamby_comparison_1995}{article}{}
+      \name{author}{1}{}{%
+        {{hash=a6189ade59757359bb9f9cddeede1490}{%
+           family={Hamby},
+           familyi={H\bibinitperiod},
+           given={D.\bibnamedelimi M.},
+           giveni={D\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \strng{namehash}{a6189ade59757359bb9f9cddeede1490}
+      \strng{fullhash}{a6189ade59757359bb9f9cddeede1490}
+      \strng{bibnamehash}{a6189ade59757359bb9f9cddeede1490}
+      \strng{authorbibnamehash}{a6189ade59757359bb9f9cddeede1490}
+      \strng{authornamehash}{a6189ade59757359bb9f9cddeede1490}
+      \strng{authorfullhash}{a6189ade59757359bb9f9cddeede1490}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Health Physics}
+      \field{title}{A {Comparison} {Of} {Sensitivity} {Analysis} {Techniques}}
+      \field{year}{1995}
+    \endentry
+    \entry{richter_sensitivity_2010}{article}{}
+      \name{author}{5}{}{%
+        {{hash=832edef6dfd65e55d0ab87e0e3367115}{%
+           family={Richter},
+           familyi={R\bibinitperiod},
+           given={G.\bibnamedelimi M.},
+           giveni={G\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=007ba195606db725051298464092c6df}{%
+           family={Acutis},
+           familyi={A\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=2cc5a1e6354649c0d64a0d148e4c01b1}{%
+           family={Trevisiol},
+           familyi={T\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+        {{hash=8949639dd2ca0369e0c7b9fc33a89657}{%
+           family={Latiri},
+           familyi={L\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+        {{hash=c50b5f8141880bcbf0b4a5cf0c2d0893}{%
+           family={Confalonieri},
+           familyi={C\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{312d923869d903c0b2c68fd8b321e700}
+      \strng{fullhash}{791bae24eb53b08aadb2544c1ef898d5}
+      \strng{bibnamehash}{312d923869d903c0b2c68fd8b321e700}
+      \strng{authorbibnamehash}{312d923869d903c0b2c68fd8b321e700}
+      \strng{authornamehash}{312d923869d903c0b2c68fd8b321e700}
+      \strng{authorfullhash}{791bae24eb53b08aadb2544c1ef898d5}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{European Journal of Agronomy}
+      \field{number}{2}
+      \field{title}{Sensitivity analysis for a complex crop model applied to {Durum} wheat in the {Mediterranean}}
+      \field{volume}{32}
+      \field{year}{2010}
+    \endentry
+    \entry{gao_image_2018}{article}{}
+      \name{author}{4}{}{%
+        {{hash=0d21fd92b2b2bc735bdf0f57553a88ab}{%
+           family={Gao},
+           familyi={G\bibinitperiod},
+           given={Yingwang},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=c8b9640d71743add92d0fbbf3cfc3352}{%
+           family={Song},
+           familyi={S\bibinitperiod},
+           given={Chenbo},
+           giveni={C\bibinitperiod}}}%
+        {{hash=36792986eb2026082241caca9ffbc203}{%
+           family={Rao},
+           familyi={R\bibinitperiod},
+           given={Xioqin},
+           giveni={X\bibinitperiod}}}%
+        {{hash=8e0d5373d758f583b69ba42b953d5e3a}{%
+           family={Ying},
+           familyi={Y\bibinitperiod},
+           given={Yibin},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{795ee51defe61ea7c94e35415dea3bda}
+      \strng{fullhash}{d464aba59b54fd1d3ceb201e81f53c45}
+      \strng{bibnamehash}{795ee51defe61ea7c94e35415dea3bda}
+      \strng{authorbibnamehash}{795ee51defe61ea7c94e35415dea3bda}
+      \strng{authornamehash}{795ee51defe61ea7c94e35415dea3bda}
+      \strng{authorfullhash}{d464aba59b54fd1d3ceb201e81f53c45}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Computers and Electronics in Agriculture}
+      \field{title}{Image processing-aided {FEA} for monitoring dynamic response of potato tubers to impact loading}
+      \field{volume}{151}
+      \field{year}{2018}
+      \field{pages}{21\bibrangedash 30}
+      \range{pages}{10}
+    \endentry
+    \entry{confalonieri_comparison_2010}{article}{}
+      \name{author}{5}{}{%
+        {{hash=c50b5f8141880bcbf0b4a5cf0c2d0893}{%
+           family={Confalonieri},
+           familyi={C\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+        {{hash=ecbd89ef1952bf6160a1be9439fb9650}{%
+           family={Bellocchi},
+           familyi={B\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod}}}%
+        {{hash=d556e980412aa46eedec6a40e184778a}{%
+           family={Bregaglio},
+           familyi={B\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+        {{hash=31b1d983291fee4d546360583f14b90c}{%
+           family={Donatelli},
+           familyi={D\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=007ba195606db725051298464092c6df}{%
+           family={Acutis},
+           familyi={A\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{db2308ee87f4c363c8db9a09159d0522}
+      \strng{fullhash}{d342432d795468aa5ac8763a3e704bd3}
+      \strng{bibnamehash}{db2308ee87f4c363c8db9a09159d0522}
+      \strng{authorbibnamehash}{db2308ee87f4c363c8db9a09159d0522}
+      \strng{authornamehash}{db2308ee87f4c363c8db9a09159d0522}
+      \strng{authorfullhash}{d342432d795468aa5ac8763a3e704bd3}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Ecological Modelling}
+      \field{title}{Comparison of sensitivity analysis techniques: {A} case study with the rice model {WARM}}
+      \field{volume}{221}
+      \field{year}{2010}
+      \field{pages}{1897\bibrangedash 1906}
+      \range{pages}{10}
+    \endentry
+    \entry{robertson_corn_2015}{article}{}
+      \name{author}{5}{}{%
+        {{hash=af00e1652441bd140bd6e1825dedbafa}{%
+           family={Robertson},
+           familyi={R\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+        {{hash=d07d628985c248c928c5442f8052aafd}{%
+           family={Julias},
+           familyi={J\bibinitperiod},
+           given={Margaret},
+           giveni={M\bibinitperiod}}}%
+        {{hash=85c590ac8eafd65630e42029d82d0aa4}{%
+           family={Gardunia},
+           familyi={G\bibinitperiod},
+           given={Brian},
+           giveni={B\bibinitperiod}}}%
+        {{hash=3807000c7e7be249b2517cc123da5d18}{%
+           family={Barten},
+           familyi={B\bibinitperiod},
+           given={Ty},
+           giveni={T\bibinitperiod}}}%
+        {{hash=b97457e5975e9d0432883a69c5c3d07c}{%
+           family={Cook},
+           familyi={C\bibinitperiod},
+           given={Douglas\bibnamedelima D},
+           giveni={D\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \strng{namehash}{8171186ce4d818baa0b04c30669c6c22}
+      \strng{fullhash}{e289bb39eb42b224c7b8a6f2a76e393a}
+      \strng{bibnamehash}{8171186ce4d818baa0b04c30669c6c22}
+      \strng{authorbibnamehash}{8171186ce4d818baa0b04c30669c6c22}
+      \strng{authornamehash}{8171186ce4d818baa0b04c30669c6c22}
+      \strng{authorfullhash}{e289bb39eb42b224c7b8a6f2a76e393a}
+      \field{extraname}{5}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Crop Science}
+      \field{title}{Corn {Stalk} {Lodging}: {A} {Forensic} {Engineering} {Approach} {Provides} {Insights} into {Failure} {Patterns} and {Mechanisms}}
+      \field{year}{2015}
+    \endentry
+    \entry{groen_ignoring_2017}{article}{}
+      \name{author}{2}{}{%
+        {{hash=a543bb178f96928827716deace602e02}{%
+           family={Groen},
+           familyi={G\bibinitperiod},
+           given={E.\bibnamedelimi A.},
+           giveni={E\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=75dea20ca1529a130efb16b79cf43ee5}{%
+           family={Heijungs},
+           familyi={H\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{bf60083e8ced9dddc852303f186df3c6}
+      \strng{fullhash}{778a0f9f0321fb13f65cc1c6bbc0155d}
+      \strng{bibnamehash}{778a0f9f0321fb13f65cc1c6bbc0155d}
+      \strng{authorbibnamehash}{778a0f9f0321fb13f65cc1c6bbc0155d}
+      \strng{authornamehash}{bf60083e8ced9dddc852303f186df3c6}
+      \strng{authorfullhash}{778a0f9f0321fb13f65cc1c6bbc0155d}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Environmental Impact Assessment Review}
+      \field{title}{Ignoring correlation in uncertainty and sensitivity analysis in life cycle assessment: what is the risk?}
+      \field{volume}{62}
+      \field{year}{2017}
+      \field{pages}{98\bibrangedash 109}
+      \range{pages}{12}
+    \endentry
+    \entry{jackson_users_1991}{book}{}
+      \name{author}{1}{}{%
+        {{hash=0a63c13273e3f77138c36cca402afc42}{%
+           family={Jackson},
+           familyi={J\bibinitperiod},
+           given={Edward\bibnamedelima J.},
+           giveni={E\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{0a63c13273e3f77138c36cca402afc42}
+      \strng{fullhash}{0a63c13273e3f77138c36cca402afc42}
+      \strng{bibnamehash}{0a63c13273e3f77138c36cca402afc42}
+      \strng{authorbibnamehash}{0a63c13273e3f77138c36cca402afc42}
+      \strng{authornamehash}{0a63c13273e3f77138c36cca402afc42}
+      \strng{authorfullhash}{0a63c13273e3f77138c36cca402afc42}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{A {User}'s {Guide} to {Principal} {Components}}
+      \field{year}{1991}
+    \endentry
+    \entry{schwarz_principal_2018}{article}{}
+      \name{author}{3}{}{%
+        {{hash=b22fa61f8480816853a97fc449b40dd9}{%
+           family={Schwarz},
+           familyi={S\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod}}}%
+        {{hash=8fc7f53419fb5d3be38d77b8785d5b8f}{%
+           family={Ackert},
+           familyi={A\bibinitperiod},
+           given={Patrick},
+           giveni={P\bibinitperiod}}}%
+        {{hash=36b759866062c66e7d3a1312df32376f}{%
+           family={Mauermann},
+           familyi={M\bibinitperiod},
+           given={Reinhard},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{5832fadf3b0800e79a7e3411084e1d8f}
+      \strng{fullhash}{580074027f5ef4245892941e335d14c9}
+      \strng{bibnamehash}{580074027f5ef4245892941e335d14c9}
+      \strng{authorbibnamehash}{580074027f5ef4245892941e335d14c9}
+      \strng{authornamehash}{5832fadf3b0800e79a7e3411084e1d8f}
+      \strng{authorfullhash}{580074027f5ef4245892941e335d14c9}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The International Journal of Advanced Manufacturing Technology}
+      \field{title}{Principal component analysis and singular value decomposition used for a numerical sensitivity analysis of a complex drawn part}
+      \field{volume}{94}
+      \field{year}{2018}
+      \field{pages}{2255\bibrangedash 2265}
+      \range{pages}{11}
+    \endentry
+    \entry{xiao_--fly_2020}{article}{}
+      \name{author}{6}{}{%
+        {{hash=084d4d0e4ebc55802447d4fc26445206}{%
+           family={Xiao},
+           familyi={X\bibinitperiod},
+           given={Manyu},
+           giveni={M\bibinitperiod}}}%
+        {{hash=df3e9b759531d0e63b32d3793bebae1b}{%
+           family={Lu},
+           familyi={L\bibinitperiod},
+           given={Dongcheng},
+           giveni={D\bibinitperiod}}}%
+        {{hash=225ea9e43fc50791fa61c71b97f0015c}{%
+           family={Breitkopf},
+           familyi={B\bibinitperiod},
+           given={Piotr},
+           giveni={P\bibinitperiod}}}%
+        {{hash=2879c5ce96eb0b516aa87f9ab047bdcc}{%
+           family={Raghavan},
+           familyi={R\bibinitperiod},
+           given={Balaji},
+           giveni={B\bibinitperiod}}}%
+        {{hash=c5a269bf7129fd2c3d61d9336f1547c8}{%
+           family={Dutta},
+           familyi={D\bibinitperiod},
+           given={Subhrajit},
+           giveni={S\bibinitperiod}}}%
+        {{hash=1703058ac1e82b63641879518d53a9de}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Weihong},
+           giveni={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{722d80c667093afefae49b1ed679b708}
+      \strng{fullhash}{5e6b9426c660ca4f2e1508132c8a60cf}
+      \strng{bibnamehash}{722d80c667093afefae49b1ed679b708}
+      \strng{authorbibnamehash}{722d80c667093afefae49b1ed679b708}
+      \strng{authornamehash}{722d80c667093afefae49b1ed679b708}
+      \strng{authorfullhash}{5e6b9426c660ca4f2e1508132c8a60cf}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Structural and Multidisciplinary Optimization}
+      \field{title}{On-the-fly model reduction for large-scale structural topology optimization using principal components analysis}
+      \field{volume}{62}
+      \field{year}{2020}
+    \endentry
+    \entry{ramsey_statistical_2013}{book}{}
+      \name{author}{2}{}{%
+        {{hash=9fa90dbc7c0f70d6e317e3f02fd77de8}{%
+           family={Ramsey},
+           familyi={R\bibinitperiod},
+           given={Fred},
+           giveni={F\bibinitperiod}}}%
+        {{hash=e14f6a09c2e0ac5f27d410b5cf792d2c}{%
+           family={Schafer},
+           familyi={S\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{3835c4f0ea2c287ee3063a588601dc08}
+      \strng{fullhash}{eac95c7478cd703dc3721bb1e0ec38b5}
+      \strng{bibnamehash}{eac95c7478cd703dc3721bb1e0ec38b5}
+      \strng{authorbibnamehash}{eac95c7478cd703dc3721bb1e0ec38b5}
+      \strng{authornamehash}{3835c4f0ea2c287ee3063a588601dc08}
+      \strng{authorfullhash}{eac95c7478cd703dc3721bb1e0ec38b5}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{3}
+      \field{title}{The {Statistical} {Sleuth}: {A} {Course} in {Methods} of {Data} {Analysis}}
+      \field{year}{2013}
+    \endentry
+    \entry{milton_theory_2002}{book}{}
+      \name{author}{1}{}{%
+        {{hash=38abd87d2c2a2c6f37f9187915ffcb53}{%
+           family={Milton},
+           familyi={M\bibinitperiod},
+           given={G.\bibnamedelimi W.},
+           giveni={G\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \strng{namehash}{38abd87d2c2a2c6f37f9187915ffcb53}
+      \strng{fullhash}{38abd87d2c2a2c6f37f9187915ffcb53}
+      \strng{bibnamehash}{38abd87d2c2a2c6f37f9187915ffcb53}
+      \strng{authorbibnamehash}{38abd87d2c2a2c6f37f9187915ffcb53}
+      \strng{authornamehash}{38abd87d2c2a2c6f37f9187915ffcb53}
+      \strng{authorfullhash}{38abd87d2c2a2c6f37f9187915ffcb53}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The {Theory} of {Composites}}
+      \field{year}{2002}
+    \endentry
+    \entry{touzani_finite_2020}{book}{}
+      \name{author}{1}{}{%
+        {{hash=adc3c77562dcee37b9cbe20e0fe192ce}{%
+           family={Touzani},
+           familyi={T\bibinitperiod},
+           given={Rachid},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{adc3c77562dcee37b9cbe20e0fe192ce}
+      \strng{fullhash}{adc3c77562dcee37b9cbe20e0fe192ce}
+      \strng{bibnamehash}{adc3c77562dcee37b9cbe20e0fe192ce}
+      \strng{authorbibnamehash}{adc3c77562dcee37b9cbe20e0fe192ce}
+      \strng{authornamehash}{adc3c77562dcee37b9cbe20e0fe192ce}
+      \strng{authorfullhash}{adc3c77562dcee37b9cbe20e0fe192ce}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Finite {Elements} and {Symmetry}}
+      \field{year}{2020}
+    \endentry
+    \entry{kumar_bending_2015}{article}{}
+      \name{author}{2}{}{%
+        {{hash=df6bbd53e7aed081bc1da399a7fe1768}{%
+           family={Kumar},
+           familyi={K\bibinitperiod},
+           given={Ananda\bibnamedelimb T.\bibnamedelimi M.},
+           giveni={A\bibinitperiod\bibinitdelim T\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=929c635ff3c5ab3d2d300510acf58e3f}{%
+           family={Reddy},
+           familyi={R\bibinitperiod},
+           given={Sanjeeva},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{cf3b90cf31b639524419ccd889802500}
+      \strng{fullhash}{72b44cea68f0d2df1f7ee60b181ed120}
+      \strng{bibnamehash}{72b44cea68f0d2df1f7ee60b181ed120}
+      \strng{authorbibnamehash}{72b44cea68f0d2df1f7ee60b181ed120}
+      \strng{authornamehash}{cf3b90cf31b639524419ccd889802500}
+      \strng{authorfullhash}{72b44cea68f0d2df1f7ee60b181ed120}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Research Journal of Agricultural Sciences}
+      \field{title}{Bending and {Cutting} {Characteristics} of {Maize} {Stalk} {Residue}}
+      \field{year}{2015}
+    \endentry
+    \entry{falzon_buckling_2008}{book}{}
+      \name{author}{2}{}{%
+        {{hash=9aaad2639f7efbea800d315e6523e05c}{%
+           family={Falzon},
+           familyi={F\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod}}}%
+        {{hash=4f0f2b2573836a2b0414a388013bf50e}{%
+           family={Aliabadi},
+           familyi={A\bibinitperiod},
+           given={M.\bibnamedelimi H.},
+           giveni={M\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \strng{namehash}{dcb7cb5030ee36779192849dd8674891}
+      \strng{fullhash}{e9201e4065ff728bde2ca7b2ee5a1c69}
+      \strng{bibnamehash}{e9201e4065ff728bde2ca7b2ee5a1c69}
+      \strng{authorbibnamehash}{e9201e4065ff728bde2ca7b2ee5a1c69}
+      \strng{authornamehash}{dcb7cb5030ee36779192849dd8674891}
+      \strng{authorfullhash}{e9201e4065ff728bde2ca7b2ee5a1c69}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Buckling and {Postbuckling} {Structures}}
+      \field{year}{2008}
+    \endentry
+    \entry{saranpaa_wood_2009}{book}{}
+      \name{author}{1}{}{%
+        {{hash=fa248ed3216ec727ac5ab6be69208d39}{%
+           family={Saranpaa},
+           familyi={S\bibinitperiod},
+           given={Pekka},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{fa248ed3216ec727ac5ab6be69208d39}
+      \strng{fullhash}{fa248ed3216ec727ac5ab6be69208d39}
+      \strng{bibnamehash}{fa248ed3216ec727ac5ab6be69208d39}
+      \strng{authorbibnamehash}{fa248ed3216ec727ac5ab6be69208d39}
+      \strng{authornamehash}{fa248ed3216ec727ac5ab6be69208d39}
+      \strng{authorfullhash}{fa248ed3216ec727ac5ab6be69208d39}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Wood {Quality} and its {Biological} {Basis}}
+      \field{year}{2009}
+    \endentry
+    \entry{huang_density_2015}{article}{}
+      \name{author}{5}{}{%
+        {{hash=5ee77b42e4286f58ba1712fe91c0b408}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Puxi},
+           giveni={P\bibinitperiod}}}%
+        {{hash=960869e9ff486261b3e071a49e5e0d9a}{%
+           family={Chang},
+           familyi={C\bibinitperiod},
+           given={Wen-Shao},
+           giveni={W\bibinithyphendelim S\bibinitperiod}}}%
+        {{hash=bb44984f8a39e7434df16db2e490b7ae}{%
+           family={Ansell},
+           familyi={A\bibinitperiod},
+           given={Martin\bibnamedelima P},
+           giveni={M\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=39f687a4707c5656f05a707170fa332a}{%
+           family={Chew},
+           familyi={C\bibinitperiod},
+           given={Y.\bibnamedelimi M.\bibnamedelimi John},
+           giveni={Y\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=28d571e297f940911822c4dd384a1138}{%
+           family={Shea},
+           familyi={S\bibinitperiod},
+           given={Andy},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{531970db70c2921bd90059835de77085}
+      \strng{fullhash}{7dc24c87f432d42906f9e4a740d9db33}
+      \strng{bibnamehash}{531970db70c2921bd90059835de77085}
+      \strng{authorbibnamehash}{531970db70c2921bd90059835de77085}
+      \strng{authornamehash}{531970db70c2921bd90059835de77085}
+      \strng{authorfullhash}{7dc24c87f432d42906f9e4a740d9db33}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Construction and Building Materials}
+      \field{title}{Density distribution profile for internodes and nodes of {Phyllostachys} edulis ({Moso} bamboo) by computer tomography scanning}
+      \field{volume}{93}
+      \field{year}{2015}
+      \field{pages}{197\bibrangedash 204}
+      \range{pages}{8}
+    \endentry
+    \entry{sarndal_model_2003}{book}{}
+      \name{author}{2}{}{%
+        {{hash=5b98f82a510f82947879dc8f6db51e7c}{%
+           family={Särndal},
+           familyi={S\bibinitperiod},
+           given={Carl-Erik},
+           giveni={C\bibinithyphendelim E\bibinitperiod}}}%
+        {{hash=23ef680d788f5ac40ff2014383932750}{%
+           family={Wretman},
+           familyi={W\bibinitperiod},
+           given={Jan},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{93a06e6358b0435c408467db39f8d0c7}
+      \strng{fullhash}{77a1f8c9fb841c2b6bab4230f62429b7}
+      \strng{bibnamehash}{77a1f8c9fb841c2b6bab4230f62429b7}
+      \strng{authorbibnamehash}{77a1f8c9fb841c2b6bab4230f62429b7}
+      \strng{authornamehash}{93a06e6358b0435c408467db39f8d0c7}
+      \strng{authorfullhash}{77a1f8c9fb841c2b6bab4230f62429b7}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Model {Assisted} {Survey} {Sampling}}
+      \field{year}{2003}
+    \endentry
+    \entry{navidi_statistics_2020}{book}{}
+      \name{author}{1}{}{%
+        {{hash=708cd6d886426c9b559190fcb9989b1f}{%
+           family={Navidi},
+           familyi={N\bibinitperiod},
+           given={William},
+           giveni={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{708cd6d886426c9b559190fcb9989b1f}
+      \strng{fullhash}{708cd6d886426c9b559190fcb9989b1f}
+      \strng{bibnamehash}{708cd6d886426c9b559190fcb9989b1f}
+      \strng{authorbibnamehash}{708cd6d886426c9b559190fcb9989b1f}
+      \strng{authornamehash}{708cd6d886426c9b559190fcb9989b1f}
+      \strng{authorfullhash}{708cd6d886426c9b559190fcb9989b1f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{5}
+      \field{title}{Statistics for {Engineers} and {Scientists}}
+      \field{year}{2020}
+    \endentry
+    \entry{xue_physiological_2021}{article}{}
+      \name{author}{9}{}{%
+        {{hash=f0167b0612cd81db280a86f41065c337}{%
+           family={Xue},
+           familyi={X\bibinitperiod},
+           given={Jun},
+           giveni={J\bibinitperiod}}}%
+        {{hash=5eeddb3ce304dbccf85bda944f61e9c8}{%
+           family={Gao},
+           familyi={G\bibinitperiod},
+           given={Shang},
+           giveni={S\bibinitperiod}}}%
+        {{hash=ef4fd729d19241ea419e98ce23f2c092}{%
+           family={Hou},
+           familyi={H\bibinitperiod},
+           given={Liangyu},
+           giveni={L\bibinitperiod}}}%
+        {{hash=7d1090c2902d42819858c25c20505599}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Lulu},
+           giveni={L\bibinitperiod}}}%
+        {{hash=e69a9e0ce95ccf2fdad6000e0fe45aa9}{%
+           family={Ming},
+           familyi={M\bibinitperiod},
+           given={Bo},
+           giveni={B\bibinitperiod}}}%
+        {{hash=c63d3ca303d5a4ee280285109960f8e3}{%
+           family={Xie},
+           familyi={X\bibinitperiod},
+           given={Ruizhi},
+           giveni={R\bibinitperiod}}}%
+        {{hash=256ed880c478b9e4392d45964065b56f}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Keru},
+           giveni={K\bibinitperiod}}}%
+        {{hash=daf26b5b717cc5037f90344463b1debb}{%
+           family={Hou},
+           familyi={H\bibinitperiod},
+           given={Peng},
+           giveni={P\bibinitperiod}}}%
+        {{hash=cfba77201c45592c010631a7fd933c62}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Shaokun},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{e4f2d60673c6249493a55c99553663ac}
+      \strng{fullhash}{926ccd1cbde5b8bdd3df523366a8b086}
+      \strng{bibnamehash}{e4f2d60673c6249493a55c99553663ac}
+      \strng{authorbibnamehash}{e4f2d60673c6249493a55c99553663ac}
+      \strng{authornamehash}{e4f2d60673c6249493a55c99553663ac}
+      \strng{authorfullhash}{926ccd1cbde5b8bdd3df523366a8b086}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{agronomy}
+      \field{title}{Physiological {Influence} of {Stalk} {Rot} on {Maize} {Lodging} after {Physiological} {Maturity}}
+      \field{volume}{11}
+      \field{year}{2021}
+    \endentry
+    \entry{ogilvie_effects_2024}{inproceedings}{}
+      \name{author}{7}{}{%
+        {{hash=23176681ddd552f6417da92cbc025442}{%
+           family={Ogilvie},
+           familyi={O\bibinitperiod},
+           given={Grant},
+           giveni={G\bibinitperiod}}}%
+        {{hash=b97457e5975e9d0432883a69c5c3d07c}{%
+           family={Cook},
+           familyi={C\bibinitperiod},
+           given={Douglas\bibnamedelima D},
+           giveni={D\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=125347ebc062548b09b0050f9e69f23b}{%
+           family={Hall},
+           familyi={H\bibinitperiod},
+           given={Ryan},
+           giveni={R\bibinitperiod}}}%
+        {{hash=beff937a4cdc33af3d62c0a2c4fdd294}{%
+           family={Shamo},
+           familyi={S\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod}}}%
+        {{hash=bd97e8132187151c737534be19c920c7}{%
+           family={Hall},
+           familyi={H\bibinitperiod},
+           given={Jacob},
+           giveni={J\bibinitperiod}}}%
+        {{hash=df0bb8027f3a8796e94f9fff87cfb776}{%
+           family={Smith},
+           familyi={S\bibinitperiod},
+           given={Kenneth},
+           giveni={K\bibinitperiod}}}%
+        {{hash=e60355e2eceae0aeab7b3facf0dba612}{%
+           family={Noh},
+           familyi={N\bibinitperiod},
+           given={Carter},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{a0761bb2be3fef6167ea52400f0e6159}
+      \strng{fullhash}{7091306cf9577b8bd064709d11f6031c}
+      \strng{bibnamehash}{a0761bb2be3fef6167ea52400f0e6159}
+      \strng{authorbibnamehash}{a0761bb2be3fef6167ea52400f0e6159}
+      \strng{authornamehash}{a0761bb2be3fef6167ea52400f0e6159}
+      \strng{authorfullhash}{7091306cf9577b8bd064709d11f6031c}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Effects of the {Leaf} {Sheath} on {Stalk} {Strength} in {Maize}}
+      \field{year}{2024}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

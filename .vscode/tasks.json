@@ -1,0 +1,10 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "update pdf",
+            "dependsOn": "build",
+            "command": "${command:latex-workshop.refresh-viewer}"
+        }
+    ]
+}
