@@ -1,1 +1,8 @@
 *.png
+*.bcf
+*.toc
+*.gz
+*.pdf
+*.out
+*.log
+*.aux
