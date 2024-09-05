@@ -1,0 +1,283 @@
+\chapter{Material Constant Measurement: Longitudinal Shear Modulus}
+\label{ch:ch3}
+\noindent This chapter is composed from a paper entitled ``Measurement of Maize Stalk Shear Moduli'' published in the journal {\itshape Plant Methods}~\scite{carter_measurement_2023}. I hereby confirm that the use of this article is compliant with all publishing agreements.
+
+\section{Background}
+\label{sec:ch3_background}
+The material behavior of maize stalks is complex and important to capture in FEA models. As stated in~\cref{ch:ch2}, both pith and rind tissue are modeled as transverse isotropic materials. This means that many material constants are required in order to fully define their behavior. Many of these material constants have not yet been reported in literature. The purpose of this chapter was to measure the longitudinal shear modulus of rind and pith tissues. This will allow the resulting FEA models to be based upon measurements instead of estimates.
+
+The mechanical behavior of transversely isotropic materials are determined by six material constants. Five of these material constants are independent~\scite{boresi_advanced_2002}. When analyzing maize stalks (which are composed of two transversely isotropic materials), twelve (ten independent) material constants are needed to model their behavior. Because of the difficulties in measuring maize stalk tissues materials (e.g. asymmetrical geometry and variation in specimens), research on maize stalk material constants has been relatively limited.
+
+Although data regarding maize stalk properties are scarce, some of the twelve material properties have been measured previously. The longitudinal modulus of rind tissue is the most commonly reported maize tissue property~\scite{al-zube_measuring_2017,al-zube_elastic_2018,zhang_tensile_2016,zhang_mechanical_2017}. This is because the longitudinal rind modulus is relatively simple to measure and it has been shown to be influential in failure modeling~\scite{ottesen_parameterised_2022}. 
+
+The longitudinal modulus of pith tissue is more difficult to measure due to its low stiffness and fragility. Studies often adopt an inference-based approach to measure this property–a researcher will measure material response of an intact specimen (pith and rind), remove the pith, test the specimen again (with just the rind), and infer the contribution of the pith. Sutherland~\scite{sutherland_influence_2022}, Zhang~\scite{zhang_mechanical_2017}, and Al-Zube~\scite{al-zube_measuring_2017} have reported the longitudinal modulus of elasticity of pith tissues.
+
+The transverse modulus of pith and rind tissue is also difficult to measure. This is because there are no closed form equations to calculate modulus values for transverse compression testing (as opposed to three point bending or simple tension testing). Stubbs used an inverse-FEA process in order to calculate the transverse modulus of elasticity of maize pith and rind tissues~\scite{stubbs_measuring_2019,stubbs_maize_2022}. 
+
+For late-season stalk lodging, researchers are most interested in tissue properties at the time of harvest when stalks often have a relatively low moisture content.  As a result, tissues are often classified as “dry” (moisture content below 15\%) or “wet” (moisture content above 15\%). Dry tissues are most relevant to late-season stalk lodging~\scite{robertson_measuring_2015} while wet tissue properties are more relevant to mid-season stalk lodging or greensnap~\scite{sutherland_influence_2022}. Dry tissues have the advantage of being more amenable to laboratory testing since they are much more stable and easier to test than wet tissues. In general, tissue stiffness is highest for dry tissues and decreases as moisture content increases~\scite{sutherland_influence_2022,zhang_tensile_2016,zhang_mechanical_2017}.
+
+While many properties have been measured, several remain unmeasured. The properties that have not yet been measured include poisson’s ratios and shear modulus values. These properties are either difficult to measure or are believed to have a less significant influence on material response in maize stalks~\scite{ottesen_parameterised_2022}. Of these remaining material properties, the longitudinal shear modulus of pith and rind tissue is the easiest to measure. This is because shear modulus is most often measured through torsion testing, and it is relatively easy to grip a maize stalk along its fibers (in the longitudinal direction).~\cref{tab:measured_properties} summarizes the maize stalk tissue properties that have and have not been measured and shows how this chapter fills a gap in our understanding of maize stalk tissue properties. 
+\newline
+
+\begin{table}[htbp]
+    \centering
+    \caption[Summary of which maize stalk tissue properties have and have not been measured.]{Summary of which maize stalk tissue properties have and have not been measured, including whether measurements were included for both wet and dry specimens.}
+    \label{tab:measured_properties}    
+    \renewcommand{\arraystretch}{1.5} % General row spacing
+
+    \begin{tabular}{|>{\centering\arraybackslash}p{2.5cm}|>{\centering\arraybackslash}p{0.35cm}|>{\centering\arraybackslash}p{0.35cm}|>{\centering\arraybackslash}p{0.35cm}|>{\centering\arraybackslash}p{0.35cm}|>{\centering\arraybackslash}p{0.35cm}|>{\centering\arraybackslash}p{0.35cm}|>{\centering\arraybackslash}p{0.65cm}|>{\centering\arraybackslash}p{0.75cm}|>{\centering\arraybackslash}p{0.65cm}|>{\centering\arraybackslash}p{0.65cm}|}
+    % \begin{tabular}{>{\centering\arraybackslash}p{2.5cm}>{\centering\arraybackslash}p{0.35cm}>{\centering\arraybackslash}p{0.35cm}>{\centering\arraybackslash}p{0.35cm}>{\centering\arraybackslash}p{0.35cm}>{\centering\arraybackslash}p{0.35cm}>{\centering\arraybackslash}p{0.35cm}>{\centering\arraybackslash}p{0.65cm}>{\centering\arraybackslash}p{0.65cm}>{\centering\arraybackslash}p{0.65cm}>{\centering\arraybackslash}p{0.65cm}}
+        \hline
+        \textbf{Source} & \textbf{${E_{||}}$} & \textbf{${E_{\perp}}$} & \textbf{${G_{||}}$} & \textbf{${G_{\perp}}$} & \textbf{${\nu_{||}}$} & \textbf{${\nu_{\perp}}$} & \textbf{Pith} & \textbf{Rind} & \textbf{Wet} & \textbf{Dry} \\
+        \hline
+        Al-Zube~\protect\cite{al-zube_measuring_2017} & ${\checkmark}$ & & & & & & & ${\checkmark}$ & & ${\checkmark}$ \\
+        \hline
+        Al-Zube~\protect\cite{al-zube_elastic_2018} & ${\checkmark}$ & & & & & & & ${\checkmark}$ & & ${\checkmark}$ \\
+        \hline
+        Stubbs~\protect\cite{stubbs_measuring_2019} & & ${\checkmark}$ & & & & & ${\checkmark}$ & ${\checkmark}$ & & ${\checkmark}$ \\
+        \hline
+        Stubbs~\protect\cite{stubbs_mapping_2020} & & ${\checkmark}$ & & & & & ${\checkmark}$ & ${\checkmark}$ & & ${\checkmark}$ \\
+        \hline
+        Sutherland~\protect\cite{sutherland_influence_2022} & ${\checkmark}$ & & & & & & ${\checkmark}$ & ${\checkmark}$ & ${\checkmark}$ & ${\checkmark}$ \\
+        \hline
+        Zhang~\protect\cite{zhang_tensile_2016} & ${\checkmark}$ & & & & & & & ${\checkmark}$ & ${\checkmark}$ & ${\checkmark}$ \\
+        \hline
+        Zhang~\protect\cite{zhang_mechanical_2017} & ${\checkmark}$ & & & & & & ${\checkmark}$ & & ${\checkmark}$ & ${\checkmark}$ \\
+        \hline
+        \textbf{This chapter} & & \boldmath{${\checkmark}$} & & & & & \boldmath{${\checkmark}$} & \boldmath{${\checkmark}$} & & \boldmath{${\checkmark}$} \\
+        \hline
+    \end{tabular}
+\end{table}
+
+The goal of this research was to measure the longitudinal shear modulus of dried maize stalk pith and rind tissues so that future studies that require these properties can be based upon empirical data instead of estimates, as has been necessary in the past~\scite{stubbs_mapping_2020,ottesen_parameterised_2022,ottesen_development_2023-1}. In particular, measurements were taken only on dried maize stalk samples for two reasons: first, dried stalks are easier to measure than wet ones; and second, because researchers are most concerned with stalk behavior at the time of harvest, when stalks are relatively dry~\scite{robertson_measuring_2015,stubbs_mapping_2020,sutherland_influence_2022}. Through this research, a 95\% confidence level distribution of pith and rind longitudinal shear moduli was developed. This knowledge will be used to improve computational models of maize stalks, thereby enabling a better understanding of the mechanisms involved in stalk lodging.
+
+\section{Methods}
+\label{sec:ch3_methods}
+Torsion tests were performed on dried maize stalks by twisting specimens (see~\cref{fig:TorsionRod}). Specimens were gripped at the node to prevent crushing due to the gripping pressure. The applied torque and rotation were measured simultaneously during each test. Following each test, the geometry of the stalk was quantified. Finally, the shear modulus was calculated based on the torque/rotation slope and the geometry of the specimen.
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[scale=1.05]{figures/TorsionRod}
+	\caption[Torsion testing illustration and photograph of experimental set up.]{Torsion testing illustration and photograph of experimental set up.}
+	\label{fig:TorsionRod}
+\end{figure}
+
+The general approach used in this chapter is similar to well established methods for measuring similar materials~\scite{noauthor_astm_nodate}. Such torsion tests were conducted on dried bamboo~\scite{revelo_development_2022,askarinejad_effects_2015,moran_new_2017} and 10-12\% moisture content wood~\scite{brabec_utilization_2016,green_wood_1999}.
+
+\subsection{Theory}
+\label{ssec:ch3_theory}
+The shear modulus, ${G}$ is a measure of a material’s resistance to shear deformation. For a prismatic 3D member, the equation relating shear deformation ${\theta}$ to applied torque ${T}$  is:
+
+\begin{equation}
+	\label{eq:angleoftwist}
+	\theta = \frac{TL}{GK}
+\end{equation}
+
+Here ${L}$ represents the length over which the torque is applied and ${K}$ is the torsional constant, a factor that accounts for the cross-sectional geometry of the object~\scite{budynas_roarks_2020}. This equation can be solved for the shear modulus:
+
+\begin{equation}
+	\label{eq:shearmodulus}
+	G = \frac{T}{\theta} \frac{L}{K}
+\end{equation}
+
+For a circular section, this simplifies to the more familiar form ${\frac{TL}{J\theta}}$ where ${J}$ is the polar area moment of inertia. However, for a specimen of arbitrary cross section (as for a maize stalk), the torsional constant should be used~\scite{popov_mechanics_2015,boresi_advanced_2002}.
+
+The theory described above relies upon several assumptions. First, the theory assumes that the member subjected to torsion is prismatic. Second, the theory assumes that the tissue is linearly elastic with small levels of deformation. These assumptions are discussed below.
+
+“Prismatic” means that the cross section of a specimen is uniform along its length. While the cross-sectional shape of maize stalks is not perfectly uniform, there is very little change in the cross-sectional shape between nodes~\scite{robertson_measuring_2015}.  The nearly uniform shape of the maize stalk is shown in~\cref{fig:NodeInternode}.
+
+The assumption for small deformations in~\cref{eq:angleoftwist,eq:shearmodulus} are met so long as the angle of twist is small. To account for this, specimens were twisted only a small amount: from 0 to 5 degrees. This approach kept measurements within the linear elastic region.
+
+\subsection{Specimen Groups and Selection}
+\label{ssec:specimen_groups_and_selection}
+Specimens came from maize stalks that were grown in an open field in Spanish Fork Utah during the 2021-2022 growing seasons. Three different commercial varieties of maize were used for testing. However, since the purpose of this chapter was to report a range of feasible values for the longitudinal shear modulus of maize, the influence of variety was not used as an experimental factor. Stalks were harvested once grain filling had completed and just before harvest. This time point corresponds to the period when late-season stalk lodging is most likely to occur~\scite{robertson_measuring_2015}. The stalks were cut with pruning shears just above the root and immediately transferred to the lab for specimen preparation.~\cref{fig:NodeInternode} shows a representative sample cutting location on an intact maize stalk.
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[scale=1.05]{figures/NodeInternode}
+	\caption[Example specimen location for sample selection.]{Example specimen location for sample selection. The specific location of a stalk was chosen based on whether the length was less than 20 cm and the diameter was less than 2.5 cm.}
+	\label{fig:NodeInternode}
+\end{figure}
+
+Specimen dimensions were limited by the physical constraints of the torsion tester (MTS Acumen 12, Eden Prairie, MN). The maximum length of specimens was constrained to 20 cm and the maximum diameter of specimens was constrained to 2.5 cm. These limits excluded only a small number of very large diameter stalks. Cuts were made 2-3 centimeters above and below a node (see~\cref{fig:NodeInternode}) so that miniature lathe chucks could grip the nodes, which are sturdier and easier to grip. Each specimen was inspected for disease, pest damage, cracks, or any other damage before being chosen. Any damaged specimens were excluded from testing.
+
+Two different specimen groups were created in order to observe specific phenomena in testing: rind-only specimens (pith tissue removed), and pith-only specimens (rind tissue removed):
+\\ \hfill \break
+\textit{Rind Only Specimens:} Specimens with only rind tissue were used to directly measure the shear modulus of the rind. To create rind-only specimens, the pith was carefully removed using drill bits, dissection spatulas, and abrasive pipe cleaners. Care was taken to ensure that the rind was not damaged in this process. If cracking occurred during pith removal, the specimen was not used. Due to the difficulty in preparing rind-only specimens, only 18 rind-only tests were performed. 
+\\ \hfill \break
+\noindent\textit{Pith Only Specimens:} Specimens with only pith tissue were used to directly measure the shear modulus of the pith. To create pith-only specimens, the rind was carefully removed using a razor blade. If cracking occurred during rind removal, the specimen was not used.
+
+\subsection{Gripping Specimens}
+\label{ssec:gripping_specimens}
+Gripping specimens is always a challenge with biological tissues. If specimens are not gripped tightly enough, slipping may occur which adversely affects the collected data. On the other hand, if specimens are gripped too tightly, the specimen may be damaged. To mitigate these problems, 180 grit sandpaper was glued to the gripping jaws. This allowed the jaws to provide substantial gripping force which prevented slipping while also avoiding crushing or cracking the specimen. Tests were not performed if cracks occurred during the grip tightening phase. Because gripping involves multiple points of contact, the center of rotation can change slightly depending on how a specimen is gripped. To mitigate this effect and to account for other sources of random measurement errors, each specimen was fixtured and tested using 3-5 replications of the torsion test. 
+
+\subsubsection{Standard Torque/Angle Measurement}
+\label{ssec:torque_angle_measurement}
+Both torque T and angle of twist ${\theta}$ were measured by a 3 kip-MTS Acumen torsion/tensile testing device. The torque transducer for this device was a 662.30H-02B Model 30 N m capacity transducer. The angle measurement for this device was a 494.47 Encoder B Rotary Encoder. Each specimen was loaded from 0 to 5 degrees at a rate of 0.15 degrees per second. This load speed was chosen because it was deemed slow enough to be considered static loading (viscoelastic effects could be neglected). Torque and angle were measured simultaneously during testing.		
+
+\subsubsection{Assessing Slippage: Alternative Angle Measurement}
+\label{ssec:alternative_angle_measurement}
+As stated previously, any shifting/slipping of the specimen during the torsion test will produce inaccuracies in the angle of twist measurement. Slipping can occur incrementally, making it very difficult to detect. To assess whether or not slippage of the grips was a problem, a second method for measuring the angle of twist was developed. This second method relied upon the rotation of two lasers attached directly to the specimen itself (see~\cref{fig:LaserSetupCombined}). Because there are no external loads applied to the lasers, this approach is not subject to any slippage.
+Under the laser method, two Feyachi 9 mm bore sight lasers were attached at the outer thirds of each specimen as shown in~\cref{fig:LaserSetupCombined}. The lasers were aimed at a grid located a known distance from the specimen. A Nikon DSLR Z2 camera with a zoom lens was used to capture the location of the laser dots relative to the grid. During torsion testing, the lasers twisted with the maize stalks, and the paths of the laser dots were captured by a sequence of photographs.
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[scale=1.05]{figures/LaserSetupCombined}
+	\caption[Laser setup.]{Laser setup. Left: two lasers were attached to the outer thirds of a specimen and pointed at a grid-poster board some distance away. A camera with a zoom lens tracked the movement of the laser dots over time. ${L_{1}}$ was the grip length used in the torsional stiffness calculation for standard samples, and ${L_{2}}$ was the grip length used in the torsional stiffness calculation for laser samples.  Right: Trigonometry of camera setup. The angle  was calculated with ${\theta = tan^{-1}[d/D]}$, where ${d}$ was the position of the laser dot on the poster board and ${D}$ was the distance from the laser to the poster board.}
+	\label{fig:LaserSetupCombined}
+\end{figure}
+
+To align the laser data with the torque and rotation data, the Nikon camera was triggered using an output signal from the torsion tester. Two photographs were taken every second during a torsion test (2 Hz sampling). As most tests took approximately 2 minutes to complete, this resulted in over 200 photographs per test. Each frame captured by the camera was analyzed using computer vision techniques to determine the position of each laser dot over time. Using trigonometry, the angle of twist between the two points was calculated over time, as shown in~\cref{fig:LaserSetupCombined}. 
+
+\subsubsection{Comparing Encoder Rotation with Laser Rotation}
+\label{ssec:comparing_encoder_rotation_with_laser_rotation}
+Rotation was thus measured using two approaches: the rotations of the grips themselves as recorded by the rotary encoder (we call this the ‘rotary encoder’ measurement procedure), and the rotation as measured by the laser method described above (we call this the ‘laser’ measurement procedure). Any discrepancies between the two tests provided evidence of slippage. Because the length of specimen differed between grips and between lasers, the appropriate quantity for comparison between the rotary encoder data and the laser data was the torsional stiffness, GK, which is defined as: 
+
+\begin{equation}
+	\label{eq:torsional_stiffness}
+	GK = \frac{T}{\theta} L
+\end{equation}
+
+Where ${T}$ was the torque measured by the MTS Acumen (identical in both tests);  was the angle of twist; and ${L}$ was the length of the specimen for which twist was measured. These lengths are shown in~\cref{fig:LaserSetupCombined} as ${L_{1}}$ (for the standard measurement) and ${L_{2}}$ for the laser measurement. A two sample t-test was used to compare results obtained using this laser measurement technique and those measured using the ‘standard’ angle measurement technique. Comparisons between the two methods for measuring rotation are presented in~\cref{ssec:influence_of_slippage}.
+
+\subsection{Quantifying Specimen Geometry}
+\label{ssec:quantifying_specimen_geometry}
+
+\subsubsection{Specimen Length Measurements}
+\label{ssec:specimen_length_measurements}
+The effective length ${L}$ of each specimen was measured. Before a torsion test began, a standard 1 mm precision flexible tape measure was used to measure the distance between the grips. This distance measurement was used for each subsequent test per specimen. Uncertainties in length measurements are explored in~\cref{ssec:uncertainty_in_measurements}.
+
+\subsubsection{Specimen Cross-sectional Geometry}
+\label{ssec:specimen_cross_sectional_geometry}
+Formulas from \textit{Roark's Formulas for Stress and Strain}~\scite{budynas_roarks_2020} were used to calculate ${K}$ for both pith-only sections and rind-only sections. For pith-only cross sections, Roark’s equation for arbitrary solid cross sections was used:
+
+\begin{equation}
+	\label{eq:kpith}
+	K_{pith} = \frac{A_{pith}^{2}}{40J_{pith}}
+\end{equation}
+
+Where ${A_{pith}}$ is the area encapsulated by the pith section and ${J_{pith}}$ is the polar moment of the area of the pith section. For hollow rind-only cross sections, Roark’s equation for arbitrary thin walled hollow cross sections was used:
+
+\begin{equation}
+	\label{eq:krind}
+	K_{rind} = \frac{4A_{m}^{2}}{\oint ds/t}
+\end{equation}
+
+Here ${A_{m}}$ was the area encapsulated by the thin wall midline, ${s}$ was the distance along the midline, and ${t}$ was a function of ${s}$ along the midline.
+The geometric information used in these equations was obtained from optical scans of specimen cross sections. Specimens were first cut perpendicular to their length with a bandsaw to expose the inner cross-section. These cross sections were held against an Epson Perfection V39 flatbed scanner and scanned at 2400 dpi. These images were then exported to Matlab (MathWorks, Natick, MA) as JPEGs for image processing.
+
+In Matlab, the Visual Processing Toolbox’s {\ttfamily imageSegmenter} function was used to create digital masks of each image. A region of interest tool was used to mark the relevant pixels for calculations.~\cref{fig:ImageSegmentation} outlines various steps of this process.
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[scale=1.05]{figures/ImageSegmentation}
+	\caption[Three steps of the image segmentation process.]{Three steps of the image segmentation process. We first imported an image to Matlab (left), then we separated the rind pixels from the pith pixels using the segmenter tool (middle), then relevant quantities were calculated using Matlab functions (right).}
+	\label{fig:ImageSegmentation}
+\end{figure}
+
+\subsection{Uncertainty in Measurements}
+\label{ssec:uncertainty_in_measurements}
+It is important to consider the degree of uncertainty when reporting measured values of plant tissues~\scite{nelson_measurement_2019}. Three quantities were required to calculate shear modulus:  the ${T/\theta}$ slope, ${L}$, and ${K}$. Each of these quantities were subject to measurement uncertainty. In this chapter, we will define the measurement uncertainty of all quantities as the two-sided 95\% confidence interval of the mean measurement. This quantity is written as
+
+\begin{equation}
+	\label{eq:uncertainty}
+	u = t_{95,n-1} \frac{s}{\sqrt{n}}
+\end{equation}
+
+Where ${t_{95,n-1}}$ was the 95\% confidence t-statistic drawn from the student’s t distribution with ${n-1}$ degrees of freedom, ${s}$ was the sample standard deviation, and ${n}$ was the number of measurements for a given specimen.
+
+The quantity ${T/\theta}$ was measured 3 to 5 times for each specimen with the MTS Acumen. The specimen was removed from the machine and refixtured between each test. The standard deviation of these measurements was used in~\cref{eq:uncertainty} to calculate ${u_{T/\theta}}$ for each set of repeated specimen measurements. This uncertainty was unique for each specimen.
+
+The quantity ${L}$ was measured as the distance between the two grips for a specimen. This was measured with a standard 1mm increment tape measure. To estimate the variation in measuring the length ${L}$, one sample was fixtured and measured 10 times by one user. The standard deviation of this repeated measurement was used with~\cref{eq:uncertainty} to calculate an uncertainty that was applied to all samples.
+
+The quantity ${K}$ was measured through numerical integration of the formulas described in~\cref{ssec:quantifying_specimen_geometry}. The biggest source of error in this measurement came from variation in manually identifying the pixels in a cross section scan as being either pith pixels or rind pixels. Erroneously identifying pith pixels as being rind pixels would inflate the ${K}$ calculated for the rind while depressing the ${K}$ value for the pith. To estimate the variation caused by the manual segmentation process, the torsional constant of one cross section scan was calculated 10 times by one user. The standard deviation of the resulting torsional constants was used with~\cref{eq:uncertainty} to calculate a ${u_{K}}$ that was applied to both pith-only and rind-only specimens.
+
+\subsubsection{Propagation of Uncertainty}
+\label{ssec:propagation_of_uncertainty}
+The Monte Carlo error propagation method~\scite{coleman_experimentation_2009} was used to determine the overall uncertainty in shear modulus. The mean and standard deviation values for ${T/\theta}$, ${L}$, and ${K}$ were calculated for each specimen. Normal distributions were then created for each quantity based on these respective mean and standard deviations. These distributions were then sampled 100 times for each quantity and combined to produce a distribution of corresponding ${G}$ values. The mean ${G}$ value was carried forward as the best estimate of ${G}$ for each specimen. The standard deviation of the ${G}$ distribution was used with~\cref{eq:uncertainty} to calculate the propagated uncertainty in shear modulus, ${u_{G}}$.
+
+It is often easier to visualize uncertainties in terms of percent uncertainty. The percent uncertainty for any of the quantities discussed above can be calculated with~\cref{eq:percent_uncertainty}:
+
+\begin{equation}
+	\label{eq:percent_uncertainty}
+	u_{\%} = (u / \bar{X}) \times 100\%
+\end{equation}
+
+Where ${u}$ was the uncertainty calculated in~\cref{eq:uncertainty} and ${\bar{X}}$ was the mean measured value for a specimen. Because ${\bar{X}}$ was unique for each specimen, the percent uncertainty varied for each specimen. In~\cref{ssec:measurement_uncertainty}, we will report the 95\% confidence intervals on the uncertainties found for ${T/\theta}$, ${L}$, ${K}$, and ${G}$.
+
+\section{Results}
+\label{sec:ch3_results}
+
+\subsection{Influence of Slippage}
+\label{ssec:influence_of_slippage}
+The paired t-test between the standard measurement method and the laser measurement method showed that there was no significant difference between the two methods (p-value of 0.2846). As seen in~\cref{fig:LasersvReg}, the medians of the two measurement distributions are virtually identical. Because slipping is not possible when using the laser method, and because there was no difference in data between the laser method and the standard methods, we concluded that slippage was negligible when using the grips approach. As a result, subsequent test results are not differentiated by the method used in measuring rotation.
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[scale=1.05]{figures/LasersvReg}
+	\caption[Torsional stiffness calculated using laser-based angle measurements and the standard MTS method.]{Torsional stiffness calculated using laser-based angle measurements (“Laser”) and the standard MTS method (“Standard”). }
+	\label{fig:LasersvReg}
+\end{figure}
+
+\hfill \break
+
+\subsection{Shear Modulus Distributions for Rind and Pith Tissues}
+\label{ssec:shear_modulus_distributions_for_rind_and_pith_tissues}
+Rind shear moduli measurements varied from 355 MPa to 1630 MPa and had an approximately normal distribution with a mean of 931 MPa and standard deviation of 334 MPa. Pith shear moduli measurements varied from 13 MPa to 55 MPa and had an approximately normal distribution with a mean of 27 MPa and standard deviation of 10 MPa.  The coefficients of variation for these distributions were very similar, 36\% for the rind, and 37\% for the pith.~\cref{fig:DirectMeasurements} shows the measured distributions for pith and rind tissues.
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[scale=1.05]{figures/DirectMeasurements}
+	\caption[Measured pith and rind shear moduli.]{Measured pith and rind shear moduli.}
+	\label{fig:DirectMeasurements}
+\end{figure}
+
+\subsubsection{Comparison to Similar Materials}
+\label{sssec:comparison_to_similar_materials}
+Wood and bamboo are relatively similar to maize and can be used as comparison. Moran~\scite{moran_new_2017} reported the mean shear modulus of Guadua Angustifolia (dry) bamboo to be 638 MPa. Green~\scite{green_wood_1999} reported the mean shear modulus of hard woods to be 768 MPa, and soft woods to be 692 MPa. The measured rind shear modulus was found to be slightly higher than these averages, with a mean of 931 MPa. 
+
+\cref{fig:OtherDataComparison} shows that the measured rind values fall within both Green and Moran’s ranges for wood and bamboo. As expected, the measured shear modulus values for pith were significantly lower than the other tissues. This is because pith tissue has a density far lower than those materials.
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[scale=1.05]{figures/OtherDataComparison}
+	\caption[Comparison between measured shear modulus values for dry specimens of maize pith, maize rind, bamboo, hardwood and softwood.]{Comparison between measured shear modulus values for dry ( < 15\% moisture) specimens of maize pith, maize rind, bamboo, hardwood and softwood. Bamboo values are from Moran~\protect\cite{moran_new_2017}, wood values are from Green~\protect\cite{green_wood_1999}.}
+	\label{fig:OtherDataComparison}
+\end{figure}
+
+\subsection{Measurement Uncertainty}
+\label{ssec:measurement_uncertainty}
+The 95\% percent confidence interval of propagated uncertainty for shear modulus was between 5.9\% and 13.44\% for rind samples. The 95\% percent confidence interval of propagated uncertainty for shear modulus was between 5.77\% and 7.17\% for pith samples. The largest source for this error came from uncertainties in slope (${u_{T/\theta}}$). 95\% confidence intervals for measurement uncertainties are shown in~\cref{tab:measurement_uncertainties}. Because these uncertainties are relatively small, they were not included in the results shown in~\cref{fig:DirectMeasurements,fig:OtherDataComparison}. 
+
+\begin{table}[htbp]
+    \centering
+    \caption[95\% confidence intervals for measurement uncertainties in slope, length, torsional constant, and measurement of shear modulus.]{95\% confidence intervals for measurement uncertainties in slope, length, torsional constant, and measurement of shear modulus.}
+    \label{tab:measurement_uncertainties}    
+    \renewcommand{\arraystretch}{2} % General row spacing
+
+    \begin{tabular}{|>{\centering\arraybackslash}p{0.65cm}|>{\centering\arraybackslash}p{2.35cm}|>{\centering\arraybackslash}p{2.35cm}|>{\centering\arraybackslash}p{2.35cm}|>{\centering\arraybackslash}p{2.35cm}|}
+        \hline
+        & \boldmath{${u_{T/\theta}}$} & \boldmath{${u_{L}}$} & \boldmath{${u_{K}}$} & \boldmath{${u_{G}}$} \\
+        \hline
+        Rind & 3.12\% - 4.83\% & 0.66\% - 0.88\% & 0.35\% - 0.86\% & 4.36\% - 12.5\% \\
+        \hline
+        Pith & 4.16\% - 12.8\% & 0.94\% - 1.17\% & 0.11\% - 0.16\% & 3.18\% - 4.75\% \\
+        \hline
+    \end{tabular}
+\end{table}
+
+\section{Discussion}
+\label{ch3:discussion}
+There are several reasons for confidence in the measured shear modulus values. Firstly, tested specimens did not slip due to applied torque. This is because t-testing showed that measurement techniques impervious to specimen slipping produced the same results as standard techniques. This means that the data is not biased towards the effects of specimen slipping.
+
+Second, the measured values agree well with reported values for similar materials. The measured rind modulus fell within the same ranges for wood and bamboo, which are relatively similar to corn tissue. As expected, the measured pith values were much lower than rind values, as has been reported elsewhere for maize tissues~\scite{stubbs_maize_2022,sutherland_influence_2022}.
+
+Lastly, the measurement uncertainties were similar to those reported for several methods for measuring the longitudinal stiffness of maize tissues in a prior study~\scite{al-zube_elastic_2018}. The majority of this error came from variability in repeated specimen testing. Similar phenomena have been seen in previous studies and are common in biological material, so this error is understandable.
+
+The results of the measurements in this chapter were used in the analysis in~\cref{ch:ch4}, and will be used in future studies involving 3D parameterized maize stalk models. This allows us to better model the material behavior of maize stalks, and is an important piece in understanding stalk lodging.
+
+\section{Limitations}
+\label{ch3:limitations}
+All specimens came from maize stalks having a relatively low moisture content, (10-15\% moisture by weight). An inverse relationship between moisture content and tissue stiffness has been reported in several previous studies of plant tissues~\scite{sutherland_influence_2022,green_wood_1999,zabler_moisture_2010,rowell_chemistry_1984}. As a result, lower modulus values are to be expected for tissues with higher moisture content.
+
+Several factors such as axial variation, the influence of moisture content, tissue maturity, and other factors were beyond the scope of this chapter. Axial variation of  tissue bending strength, flexural stiffness, and the influence of the leaf sheath have all been shown to vary along the axial length of the stalk~\scite{oduntan_effect_2024,martin-nelson_axial_2021,hale_assessing_2023}.  Shear modulus also likely varies with axial position but was not investigated. Moisture content is known to affect the mechanical properties of maize tissues~\scite{zhang_tensile_2016,sutherland_influence_2022}. In addition, the behavior of immature tissues, diseased tissues, and “goosenecked” stalks have been observed (qualitatively) by the authors to differ significantly from those of mature tissues. As a preliminary study on the longitudinal shear modulus of maize stalk tissues, this chapter focused on dry tissues and did not investigate the issues of axial variation, tissue maturity, disease, or goosenecking.
