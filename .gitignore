@@ -6,3 +6,10 @@
 *.out
 *.log
 *.aux
+*.log
+*.nlo
+*.xml
+*.lot
+*.blg
+*.lof
+*.synctex(busy)
